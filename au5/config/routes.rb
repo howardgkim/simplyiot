@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :devices
+  get 'device/index'
+
   get 'sessions/new'
 
   resources :users
