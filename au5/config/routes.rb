@@ -8,5 +8,5 @@ Rails.application.routes.draw do
   resources :articles
   resources :sessions
 
-  root to: 'articles#index'
+  root to: 'devices#index'
 end
