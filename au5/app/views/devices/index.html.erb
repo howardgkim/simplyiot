@@ -5,10 +5,12 @@
 <table>
   <thead>
     <tr>
-      <th>Ip</th>
+      <th>IP</th>
       <th>Name</th>
+      <th>Category</th>
+      <th>Owner</th>
       <th>Description</th>
-      <th colspan="3"></th>
+      <th colspan="5"></th>
     </tr>
   </thead>
 
@@ -17,6 +19,8 @@
       <tr>
         <td><%= device.ip %></td>
         <td><%= device.name %></td>
+        <td><%= device.category %></td>
+        <td><%= device.owner %></td>
         <td><%= device.description %></td>
         <td><%= link_to 'Show', device %></td>
         <td><%= link_to 'Edit', edit_device_path(device) %></td>

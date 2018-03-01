@@ -22,6 +22,16 @@
   </div>
 
   <div class="field">
+    <%= form.label :category %>
+    <%= form.text_field :category, id: :device_category %>
+  </div>
+  
+  <div class="field">
+    <%= form.label :owner %>
+    <%= form.text_field :owner, id: :device_owner %>
+  </div>
+
+  <div class="field">
     <%= form.label :description %>
     <%= form.text_area :description, id: :device_description %>
   </div>
