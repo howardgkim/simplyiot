@@ -1,35 +1,37 @@
-<p id="notice"><%= notice %></p>
+<div class="page-header">
+  <%= link_to new_device_path, class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-plus"></span>
+    New Device
+  <% end %>
+  <h1>Listing devices</h1>
+</div>
 
-<h1>Devices List</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>IP</th>
-      <th>Name</th>
-      <th>Category</th>
-      <th>Owner</th>
-      <th>Description</th>
-      <th colspan="5"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @devices.each do |device| %>
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
       <tr>
-        <td><%= device.ip %></td>
-        <td><%= device.name %></td>
-        <td><%= device.category %></td>
-        <td><%= device.owner %></td>
-        <td><%= device.description %></td>
-        <td><%= link_to 'Show', device %></td>
+            <th>Ip</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Owner</th>
+            <th>Description</th>
+            <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <%= content_tag_for(:tr, @devices) do |device| %>
+            <td><%= device.ip %></td>
+            <td><%= device.name %></td>
+            <td><%= device.category %></td>
+            <td><%= device.owner %></td>
+            <td><%= device.description %></td>
+            <td><%= link_to 'Show', device %></td>
         <td><%= link_to 'Edit', edit_device_path(device) %></td>
         <td><%= link_to 'Destroy', device, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Device', new_device_path %>
+      <% end %>
+    </tbody>
+  </table>
+</div>

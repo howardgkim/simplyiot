@@ -1,29 +1,29 @@
-<p id="notice"><%= notice %></p>
+<div class="page-header">
+  <%= link_to devices_path, class: 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to edit_device_path(@device), class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h1>Show device</h1>
+</div>
 
-<p>
-  <strong>Ip:</strong>
-  <%= @device.ip %>
-</p>
+<dl class="dl-horizontal">
+  <dt>Ip:</dt>
+  <dd><%= @device.ip %></dd>
 
-<p>
-  <strong>Name:</strong>
-  <%= @device.name %>
-</p>
+  <dt>Name:</dt>
+  <dd><%= @device.name %></dd>
 
-<p>
-  <strong>Category:</strong>
-  <%= @device.category %>
-</p>
+  <dt>Category:</dt>
+  <dd><%= @device.category %></dd>
 
-<p>
-  <strong>Owner:</strong>
-  <%= @device.owner %>
-</p>
+  <dt>Owner:</dt>
+  <dd><%= @device.owner %></dd>
 
-<p>
-  <strong>Description:</strong>
-  <%= @device.description %>
-</p>
+  <dt>Description:</dt>
+  <dd><%= @device.description %></dd>
 
-<%= link_to 'Edit', edit_device_path(@device) %> |
-<%= link_to 'Back', devices_path %>
+</dl>

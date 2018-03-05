@@ -3,9 +3,13 @@
 one:
   ip: MyString
   name: MyString
+  category: MyString
+  owner: MyString
   description: MyText
 
 two:
   ip: MyString
   name: MyString
+  category: MyString
+  owner: MyString
   description: MyText

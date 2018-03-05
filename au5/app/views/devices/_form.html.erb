@@ -1,42 +1,50 @@
-<%= form_with(model: device, local: true) do |form| %>
-  <% if device.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(device.errors.count, "error") %> prohibited this device from being saved:</h2>
+<%= form_for(@device, html: { class: "form-horizontal", role: "form" }) do |f| %>
+  <% if @device.errors.any? %>
+    <div class="alert alert-danger alert-dismissable" role="alert">
+      <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <h4><%= pluralize(@device.errors.count, "error") %> prohibited this device from being saved:</h4>
 
       <ul>
-      <% device.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+      <% @device.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
       <% end %>
       </ul>
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :ip %>
-    <%= form.text_field :ip, id: :device_ip %>
+  <div class="form-group">
+    <%= f.label :ip, class: "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_field :ip, class: "form-control" %>
+    </div>
   </div>
-
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :device_name %>
+  <div class="form-group">
+    <%= f.label :name, class: "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_field :name, class: "form-control" %>
+    </div>
   </div>
-
-  <div class="field">
-    <%= form.label :category %>
-    <%= form.text_field :category, id: :device_category %>
+  <div class="form-group">
+    <%= f.label :category, class: "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_field :category, class: "form-control" %>
+    </div>
   </div>
-  
-  <div class="field">
-    <%= form.label :owner %>
-    <%= form.text_field :owner, id: :device_owner %>
+  <div class="form-group">
+    <%= f.label :owner, class: "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_field :owner, class: "form-control" %>
+    </div>
   </div>
-
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description, id: :device_description, size: "33x10" %>
+  <div class="form-group">
+    <%= f.label :description, class: "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_area :description, class: "form-control" %>
+    </div>
   </div>
-
-  <div class="actions">
-    <%= form.submit %>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <%= f.submit class: "btn btn-primary" %>
+    </div>
   </div>
 <% end %>

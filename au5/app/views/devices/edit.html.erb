@@ -1,6 +1,13 @@
-<h1>Editing Device</h1>
+<div class="page-header">
+  <%= link_to devices_path, class: 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to @device, class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-info-sign"></span>
+    Show
+  <% end %>
+  <h1>Editing device</h1>
+</div>
 
-<%= render 'form', device: @device %>
-
-<%= link_to 'Show', @device %> |
-<%= link_to 'Back', devices_path %>
+<%= render 'form' %>
