@@ -1,0 +1,186 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	background-image: url("../image/background.jpg");
+	background-position: absolute;
+	background-attachment: fixed;
+	background-size: 100%;
+	font-family: Calibri, Arial, Times New Roman;
+}
+
+#ContentBox {
+	position: relative;
+	display: block;
+	width: 1024px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(255, 255, 255, 0.8);
+	overflow: hidden;
+	box-shadow: 5px 5px 5px #222222;
+}
+
+.Header, .LeftBar, .RightBar {
+	display: block;
+	position: relative;
+	overflow: none;
+	border-style: dashed;
+	border-width: 1px;
+}
+
+.Header {
+	width: 1024px;
+	height: 75px;
+	padding: 5px;
+}
+
+.LeftBar {
+	width: 220px;
+	height: 500px;
+	float: left;
+	z-index: 1;
+}
+
+.RightBar {
+	width: 800px;
+	height: 500px;
+	float: left;
+}
+
+#User {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: auto;
+	overflow: none;
+}
+
+#Login, #UserData {
+	position: relative;
+	width: 90%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	padding: 5px;
+}
+
+#Login {
+	display: block;
+	border-style: solid;
+	border-width: 1px;
+}
+
+#UserData {
+	display: none;
+	border-style: dotted;
+	border-width: 1px;
+}
+
+#UserPortrait {
+	display: block;
+	position: relative;
+	width: 100px;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: solid;
+	border-width: 1px;
+}
+
+#UserInfo {
+	display: block;
+	position: relative;
+	padding: 5pt;
+}
+
+#UserInfo p {
+	font-size: 11pt;
+	text-align: center;
+	margin-top: -4pt;
+	margin-bottom: -4pt;
+}
+
+#UserData input {
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#Screen {
+	display: block;
+	position: relative;
+	width: 75%;
+	height: auto;
+	font-size: 14pt;
+	margin: auto;
+	padding: 10px;
+}
+
+#UserDevices {
+	display: none;
+	position: relative;
+	width: 90%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table, th, td {
+	border: 1px solid grey;
+	table-layout: fixed;
+	width: 100%;
+	text-align: center;
+}
+
+td input {
+	width: 40%;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 34px;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  border-radius: 50%;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #3399FF;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(30px);
+  -ms-transform: translateX(30px);
+  transform: translateX(30px);
+}

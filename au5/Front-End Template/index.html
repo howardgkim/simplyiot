@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>SimplyIOT</title>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" type="image/x-icon" href=""><!-- Webpage Icon -->
+	<link rel="StyleSheet" type="text/css" href="css/general.css">
+	<script type="text/javascript" src="javascript/feature.js"></script>
+</head>
+<body>
+	<div id="ContentBox">
+		<div class="Header">
+			<h1>SimplyIOT</h1>
+		</div>
+		<div class="LeftBar">
+			<div id="User">
+				<div id="Login">
+					<label for="Username">Username:</label>
+					<input type="text" name="Username" value="">
+					<label for="Password">Password:</label>
+					<input type="password" name="Password" value="">
+					<input type="button" value="Login" onclick="LogIn()">
+					<br /><a href="">Forgot Password?</a>
+					<br /><a href="">Register</a>
+				</div>
+				<div id="UserData">
+					<div id="UserPortrait"><img src=""></div>
+					<div id="UserInfo">
+						<p>Misfit</p>
+						<p>UserID: 1234567890</p>
+					</div>
+					<input type="button" value="Logout" onclick="LogOut()">
+				</div>
+			</div>
+		</div>
+		<div class="RightBar">
+			<div id="Screen">
+				<p>SimplyIoT is an IoT management web app that empowers consumers. Off-the-shelf IoT products discourages users from buying devices outside of their ecosystem. The app integrates WiFi System on Chip with sensors and switches from multiple manufacturers to increase the purchasing options for consumers. The features of SimplyIoT include automating tasks based on parameters like brightness and humidity, a GUI to manage sensors and switches, analytics on power consumption, and user authentication. Authenticated users will be able to interact with registered peripherals and see the usage history. Admins will be able to add/remove devices and change the analytics dashboard. Although the app is geared towards single-family homes, it can be scaled up in future implementation to control multi-family residentials.</p>
+			</div>
+			<div id="UserDevices">
+				<h2>Devices List</h2>
+				<table>
+					<tr>
+						<th>Name</th>
+						<th>ID</th>
+						<th>Type</th>
+						<th>IP</th>
+						<th>Power</th>
+						<th>Setting</th>
+					</tr>
+					<tr>
+						<td>Home WLAN (WiFi)</td>
+						<td>10001</td>
+						<td>Switch</td>
+						<td>192.168.1.1</td>
+						<td>
+							<label class="switch">
+							<input type="checkbox">
+							<span class="slider"></span>
+							</label>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>House Temperature</td>
+						<td>10101</td>
+						<td>Controller</td>
+						<td>192.168.1.135</td>
+						<td>
+							<label class="switch">
+								<input type="checkbox">
+								<span class="slider"></span>
+							</label>
+						</td>
+						<td><input type="number" name="temp" value="25"></td>
+					</tr>
+					<tr>
+						<td>Home Humidity</td>
+						<td>10086</td>
+						<td>Controller</td>
+						<td>192.168.1.110</td>
+						<td>
+							<label class="switch">
+								<input type="checkbox">
+								<span class="slider"></span>
+							</label>
+						</td>
+						<td><input type="number" name="humid" value="30"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
