@@ -3069,3 +3069,1189 @@ Processing by DevicesController#new as HTML
 Completed 200 OK in 305ms (Views: 282.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-03-16 11:48:44 -0700
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (1.0ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (63.4ms)
+  Rendered layouts/_footer.html.erb (3.2ms)
+Completed 200 OK in 1398ms (Views: 1343.8ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/device" for 127.0.0.1 at 2018-03-16 11:48:51 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/device"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/device" for 127.0.0.1 at 2018-03-16 11:49:20 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/device"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/device" for 127.0.0.1 at 2018-03-16 11:49:24 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/device"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/device" for 127.0.0.1 at 2018-03-16 11:49:41 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/device"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-16 11:49:45 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 250ms (Views: 246.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/new_device_path" for 127.0.0.1 at 2018-03-16 11:49:49 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/new_device_path"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/new_device_path" for 127.0.0.1 at 2018-03-16 11:50:01 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/new_device_path"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-16 11:50:04 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.7ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (12.4ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 285ms (Views: 280.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/device" for 127.0.0.1 at 2018-03-16 11:50:06 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/device"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/device" for 127.0.0.1 at 2018-03-16 11:50:17 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/device"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-16 11:50:19 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (21.7ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 641ms (Views: 635.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/devices/new" for 127.0.0.1 at 2018-03-16 11:50:21 -0700
+Processing by DevicesController#new as HTML
+  Rendering devices/new.html.erb within layouts/application
+  Rendered devices/_form.html.erb (31.5ms)
+  Rendered devices/new.html.erb within layouts/application (52.5ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 254ms (Views: 250.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 11:50:25 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (14.6ms)
+  Rendered layouts/_footer.html.erb (11.7ms)
+Completed 200 OK in 332ms (Views: 295.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 11:50:33 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (12.0ms)
+  Rendered layouts/_footer.html.erb (1.8ms)
+Completed 200 OK in 249ms (Views: 241.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/requests/new" for 127.0.0.1 at 2018-03-16 11:50:36 -0700
+Processing by RequestsController#new as HTML
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (10.1ms)
+  Rendered requests/new.html.erb within layouts/application (17.2ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 241ms (Views: 188.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 11:50:39 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (8.3ms)
+  Rendered layouts/_footer.html.erb (2.6ms)
+Completed 200 OK in 231ms (Views: 224.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/devices/new" for 127.0.0.1 at 2018-03-16 11:50:41 -0700
+Processing by DevicesController#new as HTML
+  Rendering devices/new.html.erb within layouts/application
+  Rendered devices/_form.html.erb (40.2ms)
+  Rendered devices/new.html.erb within layouts/application (47.0ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 214ms (Views: 210.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 11:50:52 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 234ms (Views: 228.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/devices/index" for 127.0.0.1 at 2018-03-16 11:50:55 -0700
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mDevice Load (0.9ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 0 LIMIT 1[0m
+Completed 404 Not Found in 10ms (ActiveRecord: 0.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Device with 'id'=index):
+  
+app/controllers/devices_controller.rb:67:in `set_device'
+Started GET "/" for 127.0.0.1 at 2018-03-16 11:51:45 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.9ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (13.8ms)
+  Rendered layouts/_footer.html.erb (1.8ms)
+Completed 200 OK in 222ms (Views: 212.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/device/index" for 127.0.0.1 at 2018-03-16 11:51:47 -0700
+  
+ActionController::RoutingError (uninitialized constant DeviceController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/device/index" for 127.0.0.1 at 2018-03-16 11:51:54 -0700
+  
+ActionController::RoutingError (uninitialized constant DeviceController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-16 11:52:00 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (12.9ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 289ms (Views: 280.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/devices/index" for 127.0.0.1 at 2018-03-16 11:52:12 -0700
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 0 LIMIT 1[0m
+Completed 404 Not Found in 7ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Device with 'id'=index):
+  
+app/controllers/devices_controller.rb:67:in `set_device'
+Started GET "/requests/new" for 127.0.0.1 at 2018-03-16 11:52:21 -0700
+Processing by RequestsController#new as HTML
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (8.4ms)
+  Rendered requests/new.html.erb within layouts/application (13.8ms)
+  Rendered layouts/_footer.html.erb (1.8ms)
+Completed 200 OK in 203ms (Views: 198.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/requests/new" for 127.0.0.1 at 2018-03-16 11:52:43 -0700
+Processing by RequestsController#new as HTML
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (26.1ms)
+  Rendered requests/new.html.erb within layouts/application (37.3ms)
+  Rendered layouts/_footer.html.erb (3.2ms)
+Completed 200 OK in 617ms (Views: 603.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/requests" for 127.0.0.1 at 2018-03-16 11:53:01 -0700
+Processing by RequestsController#index as HTML
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.7ms)[0m  [1m[34mSELECT `requests`.* FROM `requests`[0m
+  Rendered requests/index.html.erb within layouts/application (15.6ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 431ms (Views: 424.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/requests" for 127.0.0.1 at 2018-03-16 11:53:05 -0700
+Processing by RequestsController#index as HTML
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.7ms)[0m  [1m[34mSELECT `requests`.* FROM `requests`[0m
+  Rendered requests/index.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 205ms (Views: 200.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/requests" for 127.0.0.1 at 2018-03-16 11:53:06 -0700
+Processing by RequestsController#index as HTML
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.6ms)[0m  [1m[34mSELECT `requests`.* FROM `requests`[0m
+  Rendered requests/index.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 198ms (Views: 177.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/requests" for 127.0.0.1 at 2018-03-16 11:53:55 -0700
+Processing by RequestsController#index as HTML
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.7ms)[0m  [1m[34mSELECT `requests`.* FROM `requests`[0m
+  Rendered requests/index.html.erb within layouts/application (10.1ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 233ms (Views: 226.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/devices/index" for 127.0.0.1 at 2018-03-16 11:53:57 -0700
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mDevice Load (1.6ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 0 LIMIT 1[0m
+Completed 404 Not Found in 9ms (ActiveRecord: 1.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Device with 'id'=index):
+  
+app/controllers/devices_controller.rb:67:in `set_device'
+Started GET "/" for 127.0.0.1 at 2018-03-16 11:55:11 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (8.5ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 201ms (Views: 196.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/devices/new" for 127.0.0.1 at 2018-03-16 11:55:13 -0700
+Processing by DevicesController#new as HTML
+  Rendering devices/new.html.erb within layouts/application
+  Rendered devices/_form.html.erb (20.3ms)
+  Rendered devices/new.html.erb within layouts/application (26.9ms)
+  Rendered layouts/_footer.html.erb (1.9ms)
+Completed 200 OK in 247ms (Views: 241.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/devices/devices" for 127.0.0.1 at 2018-03-16 11:55:15 -0700
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"devices"}
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 0 LIMIT 1[0m
+Completed 404 Not Found in 15ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Device with 'id'=devices):
+  
+app/controllers/devices_controller.rb:67:in `set_device'
+Started GET "/devices/devices" for 127.0.0.1 at 2018-03-16 11:55:27 -0700
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"devices"}
+  [1m[36mDevice Load (6.2ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 0 LIMIT 1[0m
+Completed 404 Not Found in 10ms (ActiveRecord: 6.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Device with 'id'=devices):
+  
+app/controllers/devices_controller.rb:67:in `set_device'
+Started GET "/devices/" for 127.0.0.1 at 2018-03-16 11:55:43 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (12.5ms)
+  Rendered layouts/_footer.html.erb (2.4ms)
+Completed 200 OK in 248ms (Views: 230.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/devices/" for 127.0.0.1 at 2018-03-16 11:56:02 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.7ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (14.3ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 236ms (Views: 229.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/devices/" for 127.0.0.1 at 2018-03-16 11:56:04 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (1.1ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_footer.html.erb (2.1ms)
+Completed 200 OK in 260ms (Views: 248.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/devices/" for 127.0.0.1 at 2018-03-16 11:56:06 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (10.0ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 218ms (Views: 209.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/devices/devices/new" for 127.0.0.1 at 2018-03-16 11:56:08 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/devices/devices/new"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/devices/devices/new" for 127.0.0.1 at 2018-03-16 11:56:18 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/devices/devices/new"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-16 11:56:22 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (14.8ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 267ms (Views: 255.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2018-03-16 11:56:26 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-16 11:56:34 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.7ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (25.0ms)
+  Rendered layouts/_footer.html.erb (2.1ms)
+Completed 200 OK in 346ms (Views: 342.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/devices/new" for 127.0.0.1 at 2018-03-16 11:56:39 -0700
+Processing by DevicesController#new as HTML
+  Rendering devices/new.html.erb within layouts/application
+  Rendered devices/_form.html.erb (19.3ms)
+  Rendered devices/new.html.erb within layouts/application (31.7ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 221ms (Views: 217.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/requests/new" for 127.0.0.1 at 2018-03-16 11:56:42 -0700
+Processing by RequestsController#new as HTML
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (10.3ms)
+  Rendered requests/new.html.erb within layouts/application (14.8ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 197ms (Views: 187.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/requests/new" for 127.0.0.1 at 2018-03-16 11:57:30 -0700
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by RequestsController#new as HTML
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (54.6ms)
+  Rendered requests/new.html.erb within layouts/application (63.8ms)
+  Rendered layouts/_footer.html.erb (3.7ms)
+Completed 200 OK in 1226ms (Views: 1131.8ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/requests" for 127.0.0.1 at 2018-03-16 11:58:23 -0700
+Processing by RequestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PxmMLaZ8+c9+1eD2wPalZRScacWip7t8OudpQ9kxjnygSmDtn47rbGSb4J1pBGMDSjBb1if1GEn/H3MS1rTGwA==", "request"=>{"title"=>"Please install air filtration device", "issue"=>"It's allergy season", "user_id"=>"4"}, "commit"=>"Create Request"}
+  [1m[35m (1.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 LIMIT 1[0m
+  [1m[35m (1.4ms)[0m  [1m[31mROLLBACK[0m
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (7.7ms)
+  Rendered requests/new.html.erb within layouts/application (29.4ms)
+  Rendered layouts/_footer.html.erb (1.8ms)
+Completed 200 OK in 472ms (Views: 296.8ms | ActiveRecord: 8.2ms)
+
+
+Started POST "/requests" for 127.0.0.1 at 2018-03-16 11:58:41 -0700
+Processing by RequestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vgu/IPnRKyQLtZWpOywPXCg2islC9oCdssVPxCzI9ZPAKDqQNFlEzIbnnwo6QehISfJmswlEKl/aKRRjDKPjaA==", "request"=>{"title"=>"Please install air filtration device", "issue"=>"It's allergy season", "user_id"=>"0"}, "commit"=>"Create Request"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 0 LIMIT 1[0m
+  [1m[35m (8.4ms)[0m  [1m[31mROLLBACK[0m
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (13.9ms)
+  Rendered requests/new.html.erb within layouts/application (25.9ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 287ms (Views: 255.2ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/requests" for 127.0.0.1 at 2018-03-16 12:00:04 -0700
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by RequestsController#index as HTML
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.8ms)[0m  [1m[34mSELECT `requests`.* FROM `requests`[0m
+  Rendered requests/index.html.erb within layouts/application (11.4ms)
+  Rendered layouts/_footer.html.erb (3.3ms)
+Completed 200 OK in 964ms (Views: 930.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/requests/new" for 127.0.0.1 at 2018-03-16 12:00:08 -0700
+Processing by RequestsController#new as HTML
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (36.4ms)
+  Rendered requests/new.html.erb within layouts/application (41.4ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 268ms (Views: 209.2ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/requests" for 127.0.0.1 at 2018-03-16 12:00:20 -0700
+Processing by RequestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x4oTE3/iOgz0KR/zzNudF0mc+BtMKtXewa1OHvVlpa9Y2f/TRhAor+5nH5hlKVtxFzDKCMl4dusEVVRP+uDtEw==", "request"=>{"title"=>"Please install air filtration device", "issue"=>"It's allergy season", "user_id"=>""}, "commit"=>"Create Request"}
+  [1m[35m (6.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO `requests` (`title`, `issue`, `created_at`, `updated_at`) VALUES ('Please install air filtration device', 'It\'s allergy season', '2018-03-16 19:00:20', '2018-03-16 19:00:20')[0m
+  [1m[35m (242.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/requests/1
+Completed 302 Found in 269ms (ActiveRecord: 250.4ms)
+
+
+Started GET "/requests/1" for 127.0.0.1 at 2018-03-16 12:00:20 -0700
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRequest Load (1.8ms)[0m  [1m[34mSELECT  `requests`.* FROM `requests` WHERE `requests`.`id` = 1 LIMIT 1[0m
+  Rendering requests/show.html.erb within layouts/application
+  Rendered requests/show.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 284ms (Views: 224.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/requests/1/edit" for 127.0.0.1 at 2018-03-16 12:00:24 -0700
+Processing by RequestsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRequest Load (1.1ms)[0m  [1m[34mSELECT  `requests`.* FROM `requests` WHERE `requests`.`id` = 1 LIMIT 1[0m
+  Rendering requests/edit.html.erb within layouts/application
+  Rendered requests/_form.html.erb (11.6ms)
+  Rendered requests/edit.html.erb within layouts/application (22.5ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 249ms (Views: 240.0ms | ActiveRecord: 1.1ms)
+
+
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT GET_LOCK(6698999013314570130, 0)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to ChangeUserToBeStringInRequests (20180316190253)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT RELEASE_LOCK(6698999013314570130)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT GET_LOCK(6698999013314570130, 0)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to ChangeUserToBeStringInRequests (20180316190253)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT RELEASE_LOCK(6698999013314570130)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK(6698999013314570130, 0)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddUsernameToRequests (20180316190645)
+  [1m[35m (1875.9ms)[0m  [1m[35mALTER TABLE `requests` ADD `username` varchar(255)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180316190645')[0m
+  [1m[35m (136.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK(6698999013314570130)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/requests" for 127.0.0.1 at 2018-03-16 12:08:08 -0700
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by RequestsController#index as HTML
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.9ms)[0m  [1m[34mSELECT `requests`.* FROM `requests`[0m
+  Rendered requests/index.html.erb within layouts/application (55.6ms)
+  Rendered layouts/_footer.html.erb (3.2ms)
+Completed 200 OK in 1135ms (Views: 1095.9ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/requests/new" for 127.0.0.1 at 2018-03-16 12:08:13 -0700
+Processing by RequestsController#new as HTML
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (62.7ms)
+  Rendered requests/new.html.erb within layouts/application (91.8ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 278ms (Views: 273.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/requests" for 127.0.0.1 at 2018-03-16 12:08:18 -0700
+Processing by RequestsController#index as HTML
+  Rendering requests/index.html.erb within layouts/application
+  [1m[35m (12.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mRequest Load (2.7ms)[0m  [1m[34mSELECT `requests`.* FROM `requests`[0m
+  Rendered requests/index.html.erb within layouts/application (97.3ms)
+  Rendered layouts/_footer.html.erb (2.7ms)
+Completed 200 OK in 1204ms (Views: 1184.9ms | ActiveRecord: 15.3ms)
+
+
+Started GET "/requests" for 127.0.0.1 at 2018-03-16 12:08:23 -0700
+Processing by RequestsController#index as HTML
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.8ms)[0m  [1m[34mSELECT `requests`.* FROM `requests`[0m
+  Rendered requests/index.html.erb within layouts/application (10.5ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 234ms (Views: 230.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/devices/new" for 127.0.0.1 at 2018-03-16 12:08:31 -0700
+Processing by DevicesController#new as HTML
+  Rendering devices/new.html.erb within layouts/application
+  Rendered devices/_form.html.erb (10.9ms)
+  Rendered devices/new.html.erb within layouts/application (15.8ms)
+  Rendered layouts/_footer.html.erb (1.9ms)
+Completed 200 OK in 314ms (Views: 255.0ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/devices/new" for 127.0.0.1 at 2018-03-16 12:08:32 -0700
+Processing by DevicesController#new as HTML
+  Rendering devices/new.html.erb within layouts/application
+  Rendered devices/_form.html.erb (27.5ms)
+  Rendered devices/new.html.erb within layouts/application (40.5ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 246ms (Views: 241.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/devices/new" for 127.0.0.1 at 2018-03-16 12:08:34 -0700
+Processing by DevicesController#new as HTML
+  Rendering devices/new.html.erb within layouts/application
+  Rendered devices/_form.html.erb (14.4ms)
+  Rendered devices/new.html.erb within layouts/application (27.7ms)
+  Rendered layouts/_footer.html.erb (1.9ms)
+Completed 200 OK in 225ms (Views: 215.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-16 12:08:37 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (3.2ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (18.5ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 235ms (Views: 223.2ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-16 12:08:39 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (14.7ms)
+  Rendered layouts/_footer.html.erb (1.9ms)
+Completed 200 OK in 233ms (Views: 222.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-16 12:09:11 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.7ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (14.0ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 303ms (Views: 297.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-16 12:10:29 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (3.5ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (27.4ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 425ms (Views: 417.8ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 12:10:32 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (21.8ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 278ms (Views: 272.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/devices/new" for 127.0.0.1 at 2018-03-16 12:10:36 -0700
+Processing by DevicesController#new as HTML
+  Rendering devices/new.html.erb within layouts/application
+  Rendered devices/_form.html.erb (16.0ms)
+  Rendered devices/new.html.erb within layouts/application (21.0ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 213ms (Views: 205.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 12:10:38 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (5.9ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (16.1ms)
+  Rendered layouts/_footer.html.erb (1.8ms)
+Completed 200 OK in 255ms (Views: 245.5ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/requests/new" for 127.0.0.1 at 2018-03-16 12:10:40 -0700
+Processing by RequestsController#new as HTML
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (7.8ms)
+  Rendered requests/new.html.erb within layouts/application (33.6ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 225ms (Views: 216.2ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT GET_LOCK(6698999013314570130, 0)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to RemoveUserIdFromRequests (20180316191344)
+  [1m[35m (169.6ms)[0m  [1m[35mALTER TABLE `requests` DROP `user_id`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (11.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180316191344')[0m
+  [1m[35m (15.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK(6698999013314570130)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for 127.0.0.1 at 2018-03-16 12:16:02 -0700
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (50.5ms)
+  Rendered layouts/_footer.html.erb (3.6ms)
+Completed 200 OK in 1040ms (Views: 1003.5ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/requests/new" for 127.0.0.1 at 2018-03-16 12:16:06 -0700
+Processing by RequestsController#new as HTML
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (34.8ms)
+  Rendered requests/new.html.erb within layouts/application (44.6ms)
+  Rendered layouts/_footer.html.erb (1.9ms)
+Completed 200 OK in 308ms (Views: 238.8ms | ActiveRecord: 4.9ms)
+
+
+Started POST "/requests" for 127.0.0.1 at 2018-03-16 12:16:19 -0700
+Processing by RequestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uAZGWmTmZ+c4sFP4qo0OvPHjDyEQhffwwH+hBzhjc/AnVaqaXRR1RCL+U5MDf8jar089MpXXVMUFh7tWN+Y7TA==", "request"=>{"title"=>"test", "issue"=>"test request", "username"=>"test user"}, "commit"=>"Create Request"}
+Unpermitted parameter: :username
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (16.2ms)
+  Rendered requests/new.html.erb within layouts/application (20.5ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 344ms (Views: 276.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/requests" for 127.0.0.1 at 2018-03-16 12:16:50 -0700
+Processing by RequestsController#index as HTML
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.8ms)[0m  [1m[34mSELECT `requests`.* FROM `requests`[0m
+  Rendered requests/index.html.erb within layouts/application (84.0ms)
+Completed 500 Internal Server Error in 110ms (ActiveRecord: 2.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_id' for #<Request:0xb2832fe8>):
+    23:       <%= content_tag_for(:tr, @requests) do |request| %>
+    24:             <td><%= request.title %></td>
+    25:             <td><%= request.issue %></td>
+    26:             <td><%= request.user_id %></td>
+    27:             <td><%= link_to 'Show', request %></td>
+    28:         <td><%= link_to 'Edit', edit_request_path(request) %></td>
+    29:         <td><%= link_to 'Destroy', request, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  
+app/views/requests/index.html.erb:26:in `block in _app_views_requests_index_html_erb___848211562_29952972'
+app/views/requests/index.html.erb:23:in `_app_views_requests_index_html_erb___848211562_29952972'
+Started GET "/requests" for 127.0.0.1 at 2018-03-16 12:17:31 -0700
+Processing by RequestsController#index as HTML
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (1.3ms)[0m  [1m[34mSELECT `requests`.* FROM `requests`[0m
+  Rendered requests/index.html.erb within layouts/application (10.1ms)
+  Rendered layouts/_footer.html.erb (3.6ms)
+Completed 200 OK in 237ms (Views: 231.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/requests/new" for 127.0.0.1 at 2018-03-16 12:17:34 -0700
+Processing by RequestsController#new as HTML
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/_form.html.erb (24.2ms)
+  Rendered requests/new.html.erb within layouts/application (37.2ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 255ms (Views: 251.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/requests" for 127.0.0.1 at 2018-03-16 12:17:42 -0700
+Processing by RequestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6czMhCUCMHipWkWF+26dgf+UBmbCnqgh2kRHvmoHWA12nyBEHPAi27MURe5SnFvnoTg0dUfMCxQfvF3vZYIQsQ==", "request"=>{"title"=>"test", "issue"=>"test issue", "username"=>"test user"}, "commit"=>"Create Request"}
+Unpermitted parameter: :username
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO `requests` (`title`, `issue`, `created_at`, `updated_at`) VALUES ('test', 'test issue', '2018-03-16 19:17:42', '2018-03-16 19:17:42')[0m
+  [1m[35m (172.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/requests/2
+Completed 302 Found in 193ms (ActiveRecord: 173.3ms)
+
+
+Started GET "/requests/2" for 127.0.0.1 at 2018-03-16 12:17:42 -0700
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRequest Load (1.1ms)[0m  [1m[34mSELECT  `requests`.* FROM `requests` WHERE `requests`.`id` = 2 LIMIT 1[0m
+  Rendering requests/show.html.erb within layouts/application
+  Rendered requests/show.html.erb within layouts/application (37.0ms)
+Completed 500 Internal Server Error in 68ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_id' for #<Request:0xb2ce1230>):
+    18:   <dd><%= @request.issue %></dd>
+    19: 
+    20:   <dt>User:</dt>
+    21:   <dd><%= @request.user_id %></dd>
+    22: 
+    23: </dl>
+  
+app/views/requests/show.html.erb:21:in `_app_views_requests_show_html_erb___535663058__647569940'
+Started GET "/requests/2" for 127.0.0.1 at 2018-03-16 12:18:06 -0700
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRequest Load (0.8ms)[0m  [1m[34mSELECT  `requests`.* FROM `requests` WHERE `requests`.`id` = 2 LIMIT 1[0m
+  Rendering requests/show.html.erb within layouts/application
+  Rendered requests/show.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 271ms (Views: 253.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/requests/2/edit" for 127.0.0.1 at 2018-03-16 12:18:09 -0700
+Processing by RequestsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRequest Load (0.8ms)[0m  [1m[34mSELECT  `requests`.* FROM `requests` WHERE `requests`.`id` = 2 LIMIT 1[0m
+  Rendering requests/edit.html.erb within layouts/application
+  Rendered requests/_form.html.erb (11.4ms)
+  Rendered requests/edit.html.erb within layouts/application (16.0ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 262ms (Views: 251.3ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/requests/2" for 127.0.0.1 at 2018-03-16 12:18:13 -0700
+Processing by RequestsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rghvf3gZHdHEpZMMtVO78oxPs7a5xzxSnS08sQCzJfs/BX08NkS3vV4xi+ujpcVU6ff0GSb3PrxvRlEYKzEmag==", "request"=>{"title"=>"test", "issue"=>"test issue", "username"=>"test user"}, "commit"=>"Update Request", "id"=>"2"}
+  [1m[36mRequest Load (2.4ms)[0m  [1m[34mSELECT  `requests`.* FROM `requests` WHERE `requests`.`id` = 2 LIMIT 1[0m
+Unpermitted parameter: :username
+  [1m[35m (3.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/requests/2
+Completed 302 Found in 73ms (ActiveRecord: 7.7ms)
+
+
+Started GET "/requests/2" for 127.0.0.1 at 2018-03-16 12:18:13 -0700
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRequest Load (0.7ms)[0m  [1m[34mSELECT  `requests`.* FROM `requests` WHERE `requests`.`id` = 2 LIMIT 1[0m
+  Rendering requests/show.html.erb within layouts/application
+  Rendered requests/show.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 265ms (Views: 244.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/requests" for 127.0.0.1 at 2018-03-16 12:18:16 -0700
+Processing by RequestsController#index as HTML
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (4.0ms)[0m  [1m[34mSELECT `requests`.* FROM `requests`[0m
+  Rendered requests/index.html.erb within layouts/application (27.3ms)
+  Rendered layouts/_footer.html.erb (1.8ms)
+Completed 200 OK in 236ms (Views: 227.8ms | ActiveRecord: 4.0ms)
+
+

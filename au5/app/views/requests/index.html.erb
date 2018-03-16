@@ -23,7 +23,7 @@
       <%= content_tag_for(:tr, @requests) do |request| %>
             <td><%= request.title %></td>
             <td><%= request.issue %></td>
-            <td><%= request.user_id %></td>
+            <td><%= request.username %></td>
             <td><%= link_to 'Show', request %></td>
         <td><%= link_to 'Edit', edit_request_path(request) %></td>
         <td><%= link_to 'Destroy', request, method: :delete, data: { confirm: 'Are you sure?' } %></td>
