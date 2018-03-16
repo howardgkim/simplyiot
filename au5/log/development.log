@@ -2462,3 +2462,610 @@ Processing by DevicesController#index as HTML
 Completed 200 OK in 200ms (Views: 185.8ms | ActiveRecord: 9.5ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-03-16 09:54:21 -0700
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 1068ms (Views: 1029.3ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 10:00:25 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[35m (1.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mDevice Load (1.4ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 219ms (Views: 211.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 10:00:30 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 226ms (Views: 220.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 10:00:40 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (9.4ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (39.2ms)
+Completed 200 OK in 338ms (Views: 318.5ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 10:05:42 -0700
+  [1m[35m (1.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (1.0ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (55.6ms)
+Completed 200 OK in 1048ms (Views: 1012.5ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 10:07:07 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mDevice Load (1.7ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 238ms (Views: 231.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 10:09:48 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.7ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (17.3ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 274ms (Views: 269.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 10:20:05 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (15.5ms)
+  Rendered layouts/_footer.html.erb (897.2ms)
+Completed 500 Internal Server Error in 1164ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about_path' for #<#<Class:0x1c8b580>:0x2a9ae00>):
+     5:               </copyright>
+     6:               <nav>
+     7:                 <ul>
+     8:                   <li><%= link_to "About",   about_path %></li>
+     9:                   <li><%= link_to "Contact", contact_path %></li>
+    10:                 </ul>
+    11:               </nav>
+  
+app/views/layouts/_footer.html.erb:8:in `_app_views_layouts__footer_html_erb___455893822__650013164'
+app/views/layouts/application.html.erb:50:in `_app_views_layouts_application_html_erb___920226183_22333128'
+Started GET "/" for 127.0.0.1 at 2018-03-16 10:22:06 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (13.1ms)
+  Rendered layouts/_footer.html.erb (5.1ms)
+Completed 500 Internal Server Error in 332ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"devices"}, missing required keys: [:id]):
+     5:               </copyright>
+     6:               <nav>
+     7:                 <ul>
+     8:                   <li><%= link_to "Devices",   device_path %></li>
+     9:                   <li><%= link_to "Requests", request_path %></li>
+    10:                 </ul>
+    11:               </nav>
+  
+app/views/layouts/_footer.html.erb:8:in `_app_views_layouts__footer_html_erb___455893822_22973916'
+app/views/layouts/application.html.erb:50:in `_app_views_layouts_application_html_erb___920226183__648096104'
+Started GET "/" for 127.0.0.1 at 2018-03-16 10:22:38 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (1.6ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (22.4ms)
+  Rendered layouts/_footer.html.erb (4.7ms)
+Completed 500 Internal Server Error in 5511ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"devices"}, missing required keys: [:id]):
+     5:               </copyright>
+     6:               <nav>
+     7:                 <ul>
+     8:                   <li><%= link_to "Devices",   device_path %></li>
+     9:                   <li><%= link_to "Requests", request_path %></li>
+    10:                 </ul>
+    11:               </nav>
+  
+app/views/layouts/_footer.html.erb:8:in `_app_views_layouts__footer_html_erb___455893822__654642020'
+app/views/layouts/application.html.erb:50:in `_app_views_layouts_application_html_erb___920226183__641829536'
+Started GET "/" for 127.0.0.1 at 2018-03-16 10:26:39 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (38.6ms)
+  Rendered layouts/_footer.html.erb (841.8ms)
+Completed 500 Internal Server Error in 1079ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `device' for #<#<Class:0xb28a5c30>:0xb28a47d8>
+Did you mean?  @devices):
+     5:               </copyright>
+     6:               <nav>
+     7:                 <ul>
+     8:                   <li><%= link_to "Devices",   device_path(device/index) %></li>
+     9:                   <li><%= link_to "Requests", request_path(request/index) %></li>
+    10:                 </ul>
+    11:               </nav>
+  
+app/views/layouts/_footer.html.erb:8:in `_app_views_layouts__footer_html_erb___455893822__639519488'
+app/views/layouts/application.html.erb:50:in `_app_views_layouts_application_html_erb___920226183__649811540'
+Started GET "/" for 127.0.0.1 at 2018-03-16 10:26:56 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (16.5ms)
+  Rendered layouts/_footer.html.erb (952.5ms)
+Completed 500 Internal Server Error in 1197ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index' for #<#<Class:0xb28a5c30>:0xb21eb1b0>):
+     5:               </copyright>
+     6:               <nav>
+     7:                 <ul>
+     8:                   <li><%= link_to "Devices",   device_path(@device/index) %></li>
+     9:                   <li><%= link_to "Requests", request_path(@request/index) %></li>
+    10:                 </ul>
+    11:               </nav>
+  
+app/views/layouts/_footer.html.erb:8:in `_app_views_layouts__footer_html_erb___455893822__656170640'
+app/views/layouts/application.html.erb:50:in `_app_views_layouts_application_html_erb___920226183__653311436'
+Started GET "/" for 127.0.0.1 at 2018-03-16 10:27:08 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (14.5ms)
+  Rendered layouts/_footer.html.erb (9.8ms)
+Completed 500 Internal Server Error in 265ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"devices", :id=>nil}, missing required keys: [:id]):
+     5:               </copyright>
+     6:               <nav>
+     7:                 <ul>
+     8:                   <li><%= link_to "Devices",   device_path(@device) %></li>
+     9:                   <li><%= link_to "Requests", request_path(@request) %></li>
+    10:                 </ul>
+    11:               </nav>
+  
+app/views/layouts/_footer.html.erb:8:in `_app_views_layouts__footer_html_erb___455893822__654897380'
+app/views/layouts/application.html.erb:50:in `_app_views_layouts_application_html_erb___920226183__654396776'
+Started GET "/" for 127.0.0.1 at 2018-03-16 10:27:17 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (18.5ms)
+  Rendered layouts/_footer.html.erb (977.3ms)
+Completed 500 Internal Server Error in 1188ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index' for #<#<Class:0xb28a5c30>:0xb34a8450>):
+     5:               </copyright>
+     6:               <nav>
+     7:                 <ul>
+     8:                   <li><%= link_to "Devices",   device_path(@device/index) %></li>
+     9:                   <li><%= link_to "Requests", request_path(@request/index) %></li>
+    10:                 </ul>
+    11:               </nav>
+  
+app/views/layouts/_footer.html.erb:8:in `_app_views_layouts__footer_html_erb___455893822__650016380'
+app/views/layouts/application.html.erb:50:in `_app_views_layouts_application_html_erb___920226183__643542560'
+Started GET "/" for 127.0.0.1 at 2018-03-16 10:29:00 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.6ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (53.5ms)
+  Rendered layouts/_footer.html.erb (4.7ms)
+Completed 500 Internal Server Error in 285ms (ActiveRecord: 4.7ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"devices", :id=>nil}, missing required keys: [:id]):
+     5:               </copyright>
+     6:               <nav>
+     7:                 <ul>
+     8:                   <li><%= link_to "Devices",   device_path(@device) %></li>
+     9:                   <li><%= link_to "Requests", request_path(@request) %></li>
+    10:                 </ul>
+    11:               </nav>
+  
+app/views/layouts/_footer.html.erb:8:in `_app_views_layouts__footer_html_erb___455893822__636629756'
+app/views/layouts/application.html.erb:50:in `_app_views_layouts_application_html_erb___920226183__645585908'
+Started GET "/" for 127.0.0.1 at 2018-03-16 10:29:33 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (10.9ms)
+  Rendered layouts/_footer.html.erb (983.4ms)
+Completed 500 Internal Server Error in 1207ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `device' for #<#<Class:0xb30a79b0>:0xb2178658>
+Did you mean?  @devices):
+     5:               </copyright>
+     6:               <nav>
+     7:                 <ul>
+     8:                   <li><%= link_to "Devices",   device_path(device) %></li>
+     9:                   <li><%= link_to "Requests", request_path(request) %></li>
+    10:                 </ul>
+    11:               </nav>
+  
+app/views/layouts/_footer.html.erb:8:in `_app_views_layouts__footer_html_erb___455893822__654479996'
+app/views/layouts/application.html.erb:50:in `_app_views_layouts_application_html_erb___920226183__653552936'
+Started GET "/" for 127.0.0.1 at 2018-03-16 10:30:01 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (2.3ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (49.4ms)
+  Rendered layouts/_footer.html.erb (892.0ms)
+Completed 500 Internal Server Error in 1194ms (ActiveRecord: 5.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `device' for #<#<Class:0xb27ba310>:0xb27b9188>
+Did you mean?  @devices):
+     5:               </copyright>
+     6:               <nav>
+     7:                 <ul>
+     8:                   <li><%= link_to "Devices",   device_path(device) %></li>
+     9:                   <li><%= link_to "Requests", request_path(request) %></li>
+    10:                 </ul>
+    11:               </nav>
+  
+app/views/layouts/_footer.html.erb:8:in `_app_views_layouts__footer_html_erb___455893822__643475180'
+app/views/layouts/application.html.erb:50:in `_app_views_layouts_application_html_erb___920226183__650242040'
+Started GET "/" for 127.0.0.1 at 2018-03-16 10:30:09 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.6ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (23.9ms)
+  Rendered layouts/_footer.html.erb (9.8ms)
+Completed 500 Internal Server Error in 270ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"requests", :id=>nil}, missing required keys: [:id]):
+     6:               <nav>
+     7:                 <ul>
+     8:                   <li><%= link_to "Devices",   device_path(@devices) %></li>
+     9:                   <li><%= link_to "Requests", request_path(@requests) %></li>
+    10:                 </ul>
+    11:               </nav>
+    12:       </div>
+  
+app/views/layouts/_footer.html.erb:9:in `_app_views_layouts__footer_html_erb___455893822__649644788'
+app/views/layouts/application.html.erb:50:in `_app_views_layouts_application_html_erb___920226183__646481132'
+Started GET "/" for 127.0.0.1 at 2018-03-16 10:30:18 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (1.2ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (22.0ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 248ms (Views: 241.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/devices/%23%3CDevice::ActiveRecord_Relation:0xb3dbb8a8%3E" for 127.0.0.1 at 2018-03-16 10:30:39 -0700
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"#<Device::ActiveRecord_Relation:0xb3dbb8a8>"}
+  [1m[36mDevice Load (12.5ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 0 LIMIT 1[0m
+Completed 404 Not Found in 34ms (ActiveRecord: 12.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Device with 'id'=#<Device::ActiveRecord_Relation:0xb3dbb8a8>):
+  
+app/controllers/devices_controller.rb:67:in `set_device'
+Started GET "/devices/%23%3CDevice::ActiveRecord_Relation:0xb3dbb8a8%3E" for 127.0.0.1 at 2018-03-16 10:32:26 -0700
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"#<Device::ActiveRecord_Relation:0xb3dbb8a8>"}
+  [1m[36mDevice Load (0.7ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 0 LIMIT 1[0m
+Completed 404 Not Found in 24ms (ActiveRecord: 3.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Device with 'id'=#<Device::ActiveRecord_Relation:0xb3dbb8a8>):
+  
+app/controllers/devices_controller.rb:68:in `set_device'
+Started GET "/devices/" for 127.0.0.1 at 2018-03-16 10:34:48 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.7ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (51.6ms)
+  Rendered layouts/_footer.html.erb (1.9ms)
+Completed 200 OK in 5891ms (Views: 5879.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/devices/" for 127.0.0.1 at 2018-03-16 10:36:20 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_footer.html.erb (3.9ms)
+Completed 200 OK in 5808ms (Views: 5801.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/devices/" for 127.0.0.1 at 2018-03-16 10:37:25 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (11.5ms)
+  Rendered layouts/_footer.html.erb (43.8ms)
+Completed 200 OK in 5562ms (Views: 5556.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/devices/" for 127.0.0.1 at 2018-03-16 10:38:03 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.7ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (10.2ms)
+  Rendered layouts/_footer.html.erb (4.1ms)
+Completed 200 OK in 254ms (Views: 243.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/devices/" for 127.0.0.1 at 2018-03-16 10:39:35 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.6ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (43.0ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 279ms (Views: 258.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/devices/%23%3CDevice::ActiveRecord_Relation:0xb34dff38%3E" for 127.0.0.1 at 2018-03-16 10:39:38 -0700
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"#<Device::ActiveRecord_Relation:0xb34dff38>"}
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 0 LIMIT 1[0m
+Completed 404 Not Found in 12ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Device with 'id'=#<Device::ActiveRecord_Relation:0xb34dff38>):
+  
+app/controllers/devices_controller.rb:68:in `set_device'
+Started GET "/devices/%23%3CDevice::ActiveRecord_Relation:0xb34dff38%3E" for 127.0.0.1 at 2018-03-16 10:39:56 -0700
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"#<Device::ActiveRecord_Relation:0xb34dff38>"}
+  [1m[36mDevice Load (7.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = NULL LIMIT 1[0m
+Completed 404 Not Found in 33ms (ActiveRecord: 10.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Device with 'id'=):
+  
+app/controllers/devices_controller.rb:68:in `set_device'
+Started GET "/devices" for 127.0.0.1 at 2018-03-16 10:54:46 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (1.0ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (61.9ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 275ms (Views: 258.3ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-16 10:55:31 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.6ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_footer.html.erb (4.2ms)
+Completed 500 Internal Server Error in 211ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"devices"}, missing required keys: [:id]):
+     5:               </copyright>
+     6:               <nav>
+     7:                 <ul>
+     8:                   <li><%= link_to "Devices", device_path %></li>
+     9:                 </ul>
+    10:               </nav>
+    11:       </div>
+  
+app/views/layouts/_footer.html.erb:8:in `_app_views_layouts__footer_html_erb___455893822__647131676'
+app/views/layouts/application.html.erb:50:in `_app_views_layouts_application_html_erb___920226183__648749420'
+Started GET "/devices" for 127.0.0.1 at 2018-03-16 11:06:12 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.9ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (41.3ms)
+  Rendered layouts/_footer.html.erb (860.1ms)
+Completed 500 Internal Server Error in 1130ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `device' for #<#<Class:0xb1f16c50>:0xb1f15a50>
+Did you mean?  @devices):
+     5:               </copyright>
+     6:               <nav>
+     7:                 <ul>
+     8:                   <li><%= link_to "Devices", {:controller => "device", :action => "show", :device => device.id } %></li>
+     9:                 </ul>
+    10:               </nav>
+    11:       </div>
+  
+app/views/layouts/_footer.html.erb:8:in `_app_views_layouts__footer_html_erb___455893822__653465156'
+app/views/layouts/application.html.erb:50:in `_app_views_layouts_application_html_erb___920226183__654803768'
+Started GET "/devices" for 127.0.0.1 at 2018-03-16 11:22:15 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.7ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (12.7ms)
+  Rendered layouts/_footer.html.erb (870.8ms)
+Completed 500 Internal Server Error in 1114ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `device' for #<#<Class:0xb1f16c50>:0xb212dc10>
+Did you mean?  @devices):
+     5:               </copyright>
+     6:               <nav>
+     7:                 <ul>
+     8:                   <li><%= link_to "Devices", {:controller => "devices", :action => "show", :device => device.id } %></li>
+     9:                 </ul>
+    10:               </nav>
+    11:       </div>
+  
+app/views/layouts/_footer.html.erb:8:in `_app_views_layouts__footer_html_erb___455893822__643376828'
+app/views/layouts/application.html.erb:50:in `_app_views_layouts_application_html_erb___920226183__653697596'
+Started GET "/devices" for 127.0.0.1 at 2018-03-16 11:22:30 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (15.7ms)
+  Rendered layouts/_footer.html.erb (961.3ms)
+Completed 500 Internal Server Error in 1218ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `device' for #<#<Class:0xb1f16c50>:0xb25f2850>
+Did you mean?  @devices):
+     5:               </copyright>
+     6:               <nav>
+     7:                 <ul>
+     8:                   <li><%= link_to "Devices", {:controller => "devices", :action => "show", :devices => device.id } %></li>
+     9:                 </ul>
+    10:               </nav>
+    11:       </div>
+  
+app/views/layouts/_footer.html.erb:8:in `_app_views_layouts__footer_html_erb___455893822__650153852'
+app/views/layouts/application.html.erb:50:in `_app_views_layouts_application_html_erb___920226183__651198224'
+Started GET "/devices" for 127.0.0.1 at 2018-03-16 11:22:42 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.7ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (22.8ms)
+  Rendered layouts/_footer.html.erb (895.4ms)
+Completed 500 Internal Server Error in 1150ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devices' for #<#<Class:0xb1f16c50>:0xb1fb21a0>
+Did you mean?  @devices):
+     5:               </copyright>
+     6:               <nav>
+     7:                 <ul>
+     8:                   <li><%= link_to "Devices", {:controller => "devices", :action => "show", :devices => devices.id } %></li>
+     9:                 </ul>
+    10:               </nav>
+    11:       </div>
+  
+app/views/layouts/_footer.html.erb:8:in `_app_views_layouts__footer_html_erb___455893822__653672984'
+app/views/layouts/application.html.erb:50:in `_app_views_layouts_application_html_erb___920226183__654483668'
+Started GET "/devices" for 127.0.0.1 at 2018-03-16 11:22:54 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (1.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (8.9ms)
+  Rendered layouts/_footer.html.erb (1025.8ms)
+Completed 500 Internal Server Error in 1291ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `device' for #<#<Class:0xb1f16c50>:0x2af0450>
+Did you mean?  @devices):
+     5:               </copyright>
+     6:               <nav>
+     7:                 <ul>
+     8:                   <li><%= link_to "Devices", {:controller => "device", :action => "show", :device => device.id } %></li>
+     9:                 </ul>
+    10:               </nav>
+    11:       </div>
+  
+app/views/layouts/_footer.html.erb:8:in `_app_views_layouts__footer_html_erb___455893822__653289596'
+app/views/layouts/application.html.erb:50:in `_app_views_layouts_application_html_erb___920226183_22334268'
+Started GET "/devices" for 127.0.0.1 at 2018-03-16 11:39:35 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (1.6ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (27.9ms)
+  Rendered layouts/_footer.html.erb (19.0ms)
+Completed 500 Internal Server Error in 227ms (ActiveRecord: 1.6ms)
+
+
+  
+SyntaxError (/home/triangle/Downloads/projects/cmpt276spring2018/au5/app/views/layouts/_footer.html.erb:8: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+"Devices", controller: device" );@output_buffer.safe_append=
+                              ^
+/home/triangle/Downloads/projects/cmpt276spring2018/au5/app/views/layouts/_footer.html.erb:8: unterminated string meets end of file):
+  
+app/views/layouts/_footer.html.erb:8: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/layouts/_footer.html.erb:8: unterminated string meets end of file
+app/views/layouts/application.html.erb:50:in `_app_views_layouts_application_html_erb___920226183__644626628'
+Started GET "/devices" for 127.0.0.1 at 2018-03-16 11:40:04 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (13.1ms)
+  Rendered layouts/_footer.html.erb (9.7ms)
+Completed 200 OK in 264ms (Views: 236.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-16 11:40:09 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (1.0ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (10.1ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 183ms (Views: 172.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-16 11:40:10 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (13.6ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 174ms (Views: 166.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/devices/new" for 127.0.0.1 at 2018-03-16 11:40:18 -0700
+Processing by DevicesController#new as HTML
+  Rendering devices/new.html.erb within layouts/application
+  Rendered devices/_form.html.erb (49.2ms)
+  Rendered devices/new.html.erb within layouts/application (66.7ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 272ms (Views: 267.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-16 11:40:21 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (36.4ms)
+  Rendered layouts/_footer.html.erb (1.9ms)
+Completed 200 OK in 258ms (Views: 254.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/devices/new" for 127.0.0.1 at 2018-03-16 11:40:23 -0700
+Processing by DevicesController#new as HTML
+  Rendering devices/new.html.erb within layouts/application
+  Rendered devices/_form.html.erb (27.4ms)
+  Rendered devices/new.html.erb within layouts/application (45.6ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 305ms (Views: 282.7ms | ActiveRecord: 0.0ms)
+
+

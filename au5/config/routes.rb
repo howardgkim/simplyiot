@@ -1,13 +1,16 @@
 Rails.application.routes.draw do
-  resources :requests
   resources :devices
   get 'device/index'
+  get 'device/show'
 
-  get 'sessions/new'
+  resources :requests
+  get 'request/index'
+  get 'request/show'
 
   resources :users
   resources :articles
   resources :sessions
+  get 'sessions/new'
 
   root to: 'devices#index'
 end
