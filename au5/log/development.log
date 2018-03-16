@@ -2217,3 +2217,248 @@ Migrating to CreateRequests (20180309233847)
   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK(6698999013314570130)[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for 127.0.0.1 at 2018-03-15 20:52:40 -0700
+  
+Mysql2::Error (Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)):
+  
+mysql2 (0.4.10) lib/mysql2/client.rb:89:in `connect'
+mysql2 (0.4.10) lib/mysql2/client.rb:89:in `initialize'
+activerecord (5.1.4) lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `new'
+activerecord (5.1.4) lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `mysql2_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.4) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.4) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.4) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-15 20:55:47 -0700
+  
+ActiveRecord::NoDatabaseError (Unknown database 'test-mysql2_development'):
+  
+activerecord (5.1.4) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `rescue in mysql2_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/mysql2_adapter.rb:12:in `mysql2_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.4) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.4) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.4) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (87.2ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (42.5ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT GET_LOCK(6698999013314570130, 0)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateArticles (20180214183229)
+  [1m[35m (46.7ms)[0m  [1m[35mCREATE TABLE `articles` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `author` varchar(255), `content` text, `published_at` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180214183229')[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateUsers (20180214184050)
+  [1m[35m (94.1ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `email` varchar(255), `password_digest` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (16.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180214184050')[0m
+  [1m[35m (12.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateDevices (20180305181254)
+  [1m[35m (88.5ms)[0m  [1m[35mCREATE TABLE `devices` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `ip` varchar(255), `name` varchar(255), `category` varchar(255), `owner` varchar(255), `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180305181254')[0m
+  [1m[35m (21.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateRequests (20180309233847)
+  [1m[35m (71.0ms)[0m  [1m[35mCREATE TABLE `requests` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `issue` text, `user_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180309233847')[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2018-03-16 03:56:12', '2018-03-16 03:56:12')[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT RELEASE_LOCK(6698999013314570130)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for 127.0.0.1 at 2018-03-15 20:56:24 -0700
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.7ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 13699ms (Views: 13661.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/devices/new" for 127.0.0.1 at 2018-03-15 20:56:42 -0700
+Processing by DevicesController#new as HTML
+  Rendering devices/new.html.erb within layouts/application
+  Rendered devices/_form.html.erb (53.8ms)
+  Rendered devices/new.html.erb within layouts/application (63.4ms)
+Completed 200 OK in 296ms (Views: 229.0ms | ActiveRecord: 6.8ms)
+
+
+Started POST "/devices" for 127.0.0.1 at 2018-03-15 20:56:46 -0700
+Processing by DevicesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P1UvGfHu2XQbQGexW3knUbfPKbQP7ERfBz/7ieY7XO9NVy3CutAg1TRzS1/p+ec2dJkLFjCnwD7n4QMmdFTafA==", "device"=>{"ip"=>"192.168.0.1", "name"=>"f", "category"=>"", "owner"=>"", "description"=>""}, "commit"=>"Create Device"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 126ms (ActiveRecord: 0.9ms)
+
+
+  
+NoMethodError (undefined method `ownerrv' for #<Device:0xb17edd70>
+Did you mean?  owner
+               owner?
+               owner=):
+  
+app/controllers/devices_controller.rb:30:in `block in create'
+app/controllers/devices_controller.rb:29:in `create'
+Started POST "/devices" for 127.0.0.1 at 2018-03-15 21:00:29 -0700
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by DevicesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P1UvGfHu2XQbQGexW3knUbfPKbQP7ERfBz/7ieY7XO9NVy3CutAg1TRzS1/p+ec2dJkLFjCnwD7n4QMmdFTafA==", "device"=>{"ip"=>"192.168.0.1", "name"=>"f", "category"=>"", "owner"=>"", "description"=>""}, "commit"=>"Create Device"}
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 6, expected 1)):
+  
+app/controllers/devices_controller.rb:72:in `device_params'
+app/controllers/devices_controller.rb:27:in `create'
+Started POST "/devices" for 127.0.0.1 at 2018-03-15 21:00:48 -0700
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by DevicesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P1UvGfHu2XQbQGexW3knUbfPKbQP7ERfBz/7ieY7XO9NVy3CutAg1TRzS1/p+ec2dJkLFjCnwD7n4QMmdFTafA==", "device"=>{"ip"=>"192.168.0.1", "name"=>"f", "category"=>"", "owner"=>"", "description"=>""}, "commit"=>"Create Device"}
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 5, expected 1)):
+  
+app/controllers/devices_controller.rb:72:in `device_params'
+app/controllers/devices_controller.rb:27:in `create'
+Started POST "/devices" for 127.0.0.1 at 2018-03-15 21:05:37 -0700
+Processing by DevicesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P1UvGfHu2XQbQGexW3knUbfPKbQP7ERfBz/7ieY7XO9NVy3CutAg1TRzS1/p+ec2dJkLFjCnwD7n4QMmdFTafA==", "device"=>{"ip"=>"192.168.0.1", "name"=>"f", "category"=>"", "owner"=>"", "description"=>""}, "commit"=>"Create Device"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.3ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 140ms (ActiveRecord: 6.6ms)
+
+
+  
+NoMethodError (undefined method `ownerrv' for #<Device:0x33ca9f8>
+Did you mean?  owner
+               owner?
+               owner=):
+  
+app/controllers/devices_controller.rb:30:in `block in create'
+app/controllers/devices_controller.rb:29:in `create'
+Started POST "/devices" for 127.0.0.1 at 2018-03-15 21:08:16 -0700
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by DevicesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P1UvGfHu2XQbQGexW3knUbfPKbQP7ERfBz/7ieY7XO9NVy3CutAg1TRzS1/p+ec2dJkLFjCnwD7n4QMmdFTafA==", "device"=>{"ip"=>"192.168.0.1", "name"=>"f", "category"=>"", "owner"=>"", "description"=>""}, "commit"=>"Create Device"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  Rendering devices/new.html.erb within layouts/application
+  Rendered devices/_form.html.erb (28.2ms)
+  Rendered devices/new.html.erb within layouts/application (34.7ms)
+Completed 200 OK in 1205ms (Views: 1121.5ms | ActiveRecord: 3.8ms)
+
+
+Started POST "/devices" for 127.0.0.1 at 2018-03-15 21:08:28 -0700
+Processing by DevicesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4VJPbTxP6r0IlQDEg2VLQnkPeFMjkhWU4DPbMf95VVd3ccrd8ceFVYXHCmeCCKxWGMuUKWggv1aI34CW3xJDrA==", "device"=>{"ip"=>"192.168.0.1", "name"=>"f", "category"=>"test", "owner"=>"test", "description"=>""}, "commit"=>"Create Device"}
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (5.9ms)[0m  [1m[32mINSERT INTO `devices` (`ip`, `name`, `category`, `owner`, `description`, `created_at`, `updated_at`) VALUES ('192.168.0.1', 'f', 'test', 'test', '', '2018-03-16 04:08:28', '2018-03-16 04:08:28')[0m
+  [1m[35m (15.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/devices/1
+Completed 302 Found in 74ms (ActiveRecord: 23.1ms)
+
+
+Started GET "/devices/1" for 127.0.0.1 at 2018-03-15 21:08:29 -0700
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDevice Load (0.9ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 1 LIMIT 1[0m
+  Rendering devices/show.html.erb within layouts/application
+  Rendered devices/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 370ms (Views: 350.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-15 21:08:32 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (9.5ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 200ms (Views: 185.8ms | ActiveRecord: 9.5ms)
+
+
