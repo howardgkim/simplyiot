@@ -4255,3 +4255,132 @@ Processing by RequestsController#index as HTML
 Completed 200 OK in 236ms (Views: 227.8ms | ActiveRecord: 4.0ms)
 
 
+Started GET "/requests" for 127.0.0.1 at 2018-03-16 14:25:21 -0700
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by RequestsController#index as HTML
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.8ms)[0m  [1m[34mSELECT `requests`.* FROM `requests`[0m
+  Rendered requests/index.html.erb within layouts/application (39.1ms)
+  Rendered layouts/_footer.html.erb (3.3ms)
+Completed 200 OK in 6742ms (Views: 6698.4ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/requests" for 127.0.0.1 at 2018-03-16 14:28:27 -0700
+Processing by RequestsController#index as HTML
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.9ms)[0m  [1m[34mSELECT `requests`.* FROM `requests`[0m
+  Rendered requests/index.html.erb within layouts/application (10.5ms)
+  Rendered layouts/_footer.html.erb (3.3ms)
+Completed 200 OK in 5753ms (Views: 5747.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/requests" for 127.0.0.1 at 2018-03-16 14:29:49 -0700
+Processing by RequestsController#index as HTML
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (1.5ms)[0m  [1m[34mSELECT `requests`.* FROM `requests`[0m
+  Rendered requests/index.html.erb within layouts/application (17.4ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 5989ms (Views: 5983.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/requests" for 127.0.0.1 at 2018-03-16 14:30:10 -0700
+Processing by RequestsController#index as HTML
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.6ms)[0m  [1m[34mSELECT `requests`.* FROM `requests`[0m
+  Rendered requests/index.html.erb within layouts/application (16.8ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 319ms (Views: 309.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/requests" for 127.0.0.1 at 2018-03-16 14:30:14 -0700
+Processing by RequestsController#index as HTML
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.8ms)[0m  [1m[34mSELECT `requests`.* FROM `requests`[0m
+  Rendered requests/index.html.erb within layouts/application (8.9ms)
+  Rendered layouts/_footer.html.erb (2.3ms)
+Completed 200 OK in 269ms (Views: 264.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/requests" for 127.0.0.1 at 2018-03-16 14:30:45 -0700
+Processing by RequestsController#index as HTML
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.6ms)[0m  [1m[34mSELECT `requests`.* FROM `requests`[0m
+  Rendered requests/index.html.erb within layouts/application (12.3ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 6772ms (Views: 6758.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/requests" for 127.0.0.1 at 2018-03-16 14:31:15 -0700
+Processing by RequestsController#index as HTML
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.6ms)[0m  [1m[34mSELECT `requests`.* FROM `requests`[0m
+  Rendered requests/index.html.erb within layouts/application (12.4ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 6012ms (Views: 6006.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/requests" for 127.0.0.1 at 2018-03-16 14:31:37 -0700
+Processing by RequestsController#index as HTML
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.7ms)[0m  [1m[34mSELECT `requests`.* FROM `requests`[0m
+  Rendered requests/index.html.erb within layouts/application (13.8ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 6097ms (Views: 6087.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/requests" for 127.0.0.1 at 2018-03-16 14:32:03 -0700
+Processing by RequestsController#index as HTML
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.6ms)[0m  [1m[34mSELECT `requests`.* FROM `requests`[0m
+  Rendered requests/index.html.erb within layouts/application (13.3ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 5613ms (Views: 5606.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/requests" for 127.0.0.1 at 2018-03-16 14:32:25 -0700
+Processing by RequestsController#index as HTML
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (1.0ms)[0m  [1m[34mSELECT `requests`.* FROM `requests`[0m
+  Rendered requests/index.html.erb within layouts/application (19.7ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 265ms (Views: 252.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/requests" for 127.0.0.1 at 2018-03-16 14:32:32 -0700
+Processing by RequestsController#index as HTML
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.6ms)[0m  [1m[34mSELECT `requests`.* FROM `requests`[0m
+  Rendered requests/index.html.erb within layouts/application (11.2ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 233ms (Views: 228.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/requests/1" for 127.0.0.1 at 2018-03-16 14:32:40 -0700
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRequest Load (0.8ms)[0m  [1m[34mSELECT  `requests`.* FROM `requests` WHERE `requests`.`id` = 1 LIMIT 1[0m
+  Rendering requests/show.html.erb within layouts/application
+  Rendered requests/show.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 197ms (Views: 177.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/requests" for 127.0.0.1 at 2018-03-16 14:32:43 -0700
+Processing by RequestsController#index as HTML
+  Rendering requests/index.html.erb within layouts/application
+  [1m[36mRequest Load (0.8ms)[0m  [1m[34mSELECT `requests`.* FROM `requests`[0m
+  Rendered requests/index.html.erb within layouts/application (12.0ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 252ms (Views: 248.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 14:32:49 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (1.3ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (36.2ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 221ms (Views: 205.4ms | ActiveRecord: 3.5ms)
+
+
