@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  
+  resources :users
+  get '/signup', to: 'users#new'
+  
   resources :devices
   get 'device/index'
   get 'device/show'
@@ -7,8 +11,6 @@ Rails.application.routes.draw do
   get 'request/index'
   get 'request/show'
 
-  resources :users
-  resources :articles
   resources :sessions
   get 'sessions/new'
 
