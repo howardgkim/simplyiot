@@ -2,6 +2,14 @@
 @import "bootstrap-sprockets.scss";
 @import "bootstrap.scss";
 
+html {
+  background: url(background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
   padding-top: $navbar-height + 10px;
 }
@@ -25,7 +33,6 @@ footer {
   left: 0;
   height: 35px;
   background-color: #233140;
-  padding: 10px 0;
   width: 100%;
 
 }
