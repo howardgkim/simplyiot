@@ -12,5 +12,5 @@ Rails.application.routes.draw do
   resources :sessions
   get 'sessions/new'
 
-  root to: 'devices#index'
+  root to: 'welcome#index'
 end
