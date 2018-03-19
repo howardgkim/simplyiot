@@ -1,5 +1,5 @@
 <div class="page-header">
-  <%= link_to new_device_path, class: 'btn btn-primary' do %>
+  <%= link_to new_device_path, class: 'btn btn-success' do %>
     <span class="glyphicon glyphicon-plus"></span>
     New Device
   <% end %>
@@ -15,9 +15,10 @@
             <th>Category</th>
             <th>Owner</th>
             <th>Description</th>
+            <th>Power</th>
+            <th>Status</th> <!-- change to uptime? -->
             <th></th>
-        <th></th>
-        <th></th>
+            <th></th>
       </tr>
     </thead>
 
@@ -28,7 +29,10 @@
             <td><%= device.category %></td>
             <td><%= device.owner %></td>
             <td><%= device.description %></td>
-            <td><%= link_to 'Show', device %></td>
+            <!-- <td><%= link_to 'Show', device %></td> -->
+            <td><%= link_to '/', class: 'btn btn-success btn-block' do %>
+            <span class="glyphicon glyphicon-flash"></span> Power <% end %></td>
+            <td></td>
         <td><%= link_to 'Edit', edit_device_path(device) %></td>
         <td><%= link_to 'Destroy', device, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       <% end %>
