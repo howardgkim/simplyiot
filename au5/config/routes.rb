@@ -12,7 +12,9 @@ Rails.application.routes.draw do
   get 'request/show'
 
   resources :sessions
-  get 'sessions/new'
+  get    '/login',   to: 'sessions#new'
+  post   '/login',   to: 'sessions#create'
+  delete '/logout',  to: 'sessions#destroy'
 
   root to: 'welcome#index'
 end

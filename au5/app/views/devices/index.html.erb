@@ -33,8 +33,8 @@
             <!-- <td><%= link_to 'Show', device %></td> -->
             <td><%= link_to '/', class: 'btn btn-success btn-block' do %>
             <span class="glyphicon glyphicon-flash"></span> Power <% end %></td>
-            <td></td>
-            <td></td>
+            <td><%= device.status %></td>
+            <td><%= device.running %></td>
         <td><%= link_to 'Edit', edit_device_path(device) %></td>
         <td><%= link_to 'Destroy', device, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       <% end %>
