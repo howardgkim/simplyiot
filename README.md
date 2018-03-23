@@ -1,9 +1,9 @@
 # SimplyIoT
-SimplyIoT is an IoT management web app that empowers consumers. Off-the-shelf IoT products discourages users from buying devices outside of their ecosystem. Our app integrates WiFi System on Chip with sensors and switches from multiple manufacturers to increase the purchasing options for consumers. 
+SimplyIoT is an IoT management web application that empowers consumers. Off-the-shelf IoT products discourage users from buying devices outside of their ecosystem. Our application integrates WiFi System on Chip with sensors and switches from multiple manufacturers to offer customers more buying options. 
 
-The features of SimplyIoT include automating tasks based on parameters like brightness and humidity, a GUI to manage sensors and switches, analytics on power consumption, and user authentication. Authenticated users will be able to interact with registered peripherals and see the usage history. Admins will be able to add/remove devices and change the analytics dashboard. 
+SimplyIoT includes automation features based on parameters: brightness and humidity, sensors and switches management (GUI), power consumption analysis, and user authentication. Authenticated users can interact with registered peripherals and see the usage history. Admins can add/remove devices and change the analytic dashboard. 
 
-Although the app is geared towards single-family homes, it can be scaled up in future implementation to control multi-family residentials. 
+The application is targeting single-family homes, but it can be developed to control multi-family residential homes. 
 
 ![My image](https://howardgkim.github.io/webpage/Screenshot%202018-03-20%20at%2020.04.56.png)
 ![My image](https://howardgkim.github.io/webpage/Screenshot%202018-03-20%20at%2020.05.13.png)
