@@ -5,10 +5,10 @@ Rails.application.routes.draw do
   
   resources :devices
   get 'device/index'
-  get 'device/show'
+  get 'devices/show'
   get '/devices/power/:id', to: 'devices#power', as: 'power' # adding :id resolved the error where method could not find id
   get '/devices/shutdown/:id', to: 'devices#shutdown', as: 'shutdown'
-  
+
   resources :requests
   get 'request/index'
   get 'request/show'

@@ -67,15 +67,17 @@ class DevicesController < ApplicationController
     sock.write 'SWITCH'+@device.switch.to_s+'=1'
     #puts sock.read(6) # Since the response message has 6 bytes.
     sock.close
+    @device.running = DateTime.current() #update Running Since column
     redirect_to '/devices'
   end
 
   def shutdown
     require 'socket'
     sock = TCPSocket.new(@device.ip, 43333)
-    sock.write 'SWITCH'+@device.switch.to_s+'=0'
+    sock.write 'SWITCH'+@device.switch.to_s+'=0' # e.g. SWITCH1=0
     #puts sock.read(6) # Since the response message has 6 bytes.
     sock.close
+    @device.running = '' #update Running Since column to null, likely wrong method
     redirect_to '/devices'
   end
 

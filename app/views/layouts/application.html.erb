@@ -31,11 +31,11 @@
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="http://localhost:3000">Home</a></li>
+          <li class="active"><%= link_to "Home", root_path %></li>
           <li><%= link_to "Contact", root_path %></li>
             <% if logged_in? %>
-                <li><a href="http://localhost:3000/devices/">Devices</a></li>
-              <li><a href="http://localhost:3000/requests/">Requests</a></li>
+                <li><%= link_to "Devices", devices_path %></li>
+              <li><%= link_to "Reqists", requests_path %></li>
               <li><%= link_to "Log out", logout_path, method: :delete %></li>
             <% else %>
               <li><%= link_to "Log in", login_path %></li>
