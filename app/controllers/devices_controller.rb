@@ -1,5 +1,5 @@
 class DevicesController < ApplicationController
-  before_action :set_device, only: [:show, :edit, :update, :destroy, :power]
+  before_action :set_device, only: [:show, :edit, :update, :destroy, :power, :shutdown]
 
   # GET /devices
   # GET /devices.json
@@ -69,6 +69,16 @@ class DevicesController < ApplicationController
     sock.close
     redirect_to '/devices'
   end
+
+  def shutdown
+    require 'socket'
+    sock = TCPSocket.new(@device.ip, 43333)
+    sock.write 'SWITCH'+@device.switch.to_s+'=0'
+    #puts sock.read(6) # Since the response message has 6 bytes.
+    sock.close
+    redirect_to '/devices'
+  end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
