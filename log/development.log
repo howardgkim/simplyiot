@@ -9164,3 +9164,520 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 80ms (Views: 78.6ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/devices" for 127.0.0.1 at 2018-03-24 12:34:21 -0700
+  [1m[35m (11.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (2.4ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (38.7ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 6.6ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1)):
+    36:             <td><%= link_to power_path(device), class: 'btn btn-success btn-block' do %>
+    37:             <span class="glyphicon glyphicon-flash"></span> Power <% end %></td>
+    38:             <td><%= device.status %></td>
+    39:             <td><%= device.running %></td>
+    40:         <td><%= link_to 'Edit', edit_device_path(device) %></td>
+    41:         <td><%= link_to 'Destroy', device, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    42:       <% end %>
+  
+app/models/device.rb:8:in `running'
+app/views/devices/index.html.erb:39:in `block in _app_views_devices_index_html_erb___1843989142555659663_27167400'
+app/views/devices/index.html.erb:28:in `_app_views_devices_index_html_erb___1843989142555659663_27167400'
+Started GET "/devices" for 127.0.0.1 at 2018-03-24 12:38:05 -0700
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (13.2ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (2.3ms)
+Completed 200 OK in 4092ms (Views: 4085.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/devices/power/1" for 127.0.0.1 at 2018-03-24 12:38:26 -0700
+Processing by DevicesController#power as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDevice Load (1.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.4ms)
+
+
+  
+Errno::ECONNREFUSED (Connection refused - connect(2) for "localhost" port 43333):
+  
+app/controllers/devices_controller.rb:66:in `initialize'
+app/controllers/devices_controller.rb:66:in `new'
+app/controllers/devices_controller.rb:66:in `power'
+Started GET "/devices/power/1" for 127.0.0.1 at 2018-03-24 12:38:26 -0700
+Processing by DevicesController#power as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.4ms)
+
+
+  
+Errno::ECONNREFUSED (Connection refused - connect(2) for "localhost" port 43333):
+  
+app/controllers/devices_controller.rb:66:in `initialize'
+app/controllers/devices_controller.rb:66:in `new'
+app/controllers/devices_controller.rb:66:in `power'
+Started GET "/devices/power/1" for 127.0.0.1 at 2018-03-24 12:39:03 -0700
+Processing by DevicesController#power as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDevice Load (2.2ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/devices
+Completed 302 Found in 7ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-24 12:39:03 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 71ms (Views: 69.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/devices/power/1" for 127.0.0.1 at 2018-03-24 12:39:21 -0700
+Processing by DevicesController#power as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/devices
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-24 12:39:21 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.7ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 65ms (Views: 63.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/devices/power/1" for 127.0.0.1 at 2018-03-24 12:39:22 -0700
+Processing by DevicesController#power as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/devices
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-24 12:39:22 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 63ms (Views: 61.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/devices/power/1" for 127.0.0.1 at 2018-03-24 12:39:23 -0700
+Processing by DevicesController#power as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/devices
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-24 12:39:23 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (2.6ms)
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (2.4ms)
+Completed 200 OK in 66ms (Views: 62.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-24 12:39:29 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 53ms (Views: 51.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-24 12:39:30 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 58ms (Views: 56.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-24 12:39:41 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.5ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (6.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 77ms (Views: 74.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-24 12:40:36 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (11.9ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1)):
+    36:             <td><%= link_to power_path(device), class: 'btn btn-success btn-block' do %>
+    37:             <span class="glyphicon glyphicon-flash"></span> Power <% end %></td>
+    38:             <td><%= device.status %></td>
+    39:             <td><%= device.running %></td>
+    40:         <td><%= link_to 'Edit', edit_device_path(device) %></td>
+    41:         <td><%= link_to 'Destroy', device, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    42:       <% end %>
+  
+app/models/device.rb:8:in `running'
+app/views/devices/index.html.erb:39:in `block in _app_views_devices_index_html_erb___1843989142555659663_69939226116960'
+app/views/devices/index.html.erb:28:in `_app_views_devices_index_html_erb___1843989142555659663_69939226116960'
+Started GET "/devices" for 127.0.0.1 at 2018-03-24 12:42:13 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (14.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 69ms (Views: 62.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/devices/power/1" for 127.0.0.1 at 2018-03-24 12:42:15 -0700
+Processing by DevicesController#power as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/devices
+Completed 302 Found in 28ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-24 12:42:15 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (2.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 59ms (Views: 57.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/devices/power/1" for 127.0.0.1 at 2018-03-24 12:42:17 -0700
+Processing by DevicesController#power as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/devices
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-24 12:42:17 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 58ms (Views: 54.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-24 12:42:36 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (11.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 92ms (Views: 86.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/devices/power/1" for 127.0.0.1 at 2018-03-24 12:42:38 -0700
+Processing by DevicesController#power as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDevice Load (1.3ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/devices
+Completed 302 Found in 4ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-24 12:42:38 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (4.2ms)
+Completed 200 OK in 88ms (Views: 84.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-24 12:42:48 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (14.9ms)
+  [1m[36mUser Load (5.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (3.3ms)
+Completed 200 OK in 106ms (Views: 95.1ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/devices/power/1" for 127.0.0.1 at 2018-03-24 12:42:49 -0700
+Processing by DevicesController#power as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/devices
+Completed 302 Found in 7ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-24 12:42:49 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (5.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 60ms (Views: 58.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-24 12:43:17 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.5ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (13.8ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1)):
+    36:             <td><%= link_to power_path(device), class: 'btn btn-success btn-block' do %>
+    37:             <span class="glyphicon glyphicon-flash"></span> Power <% end %></td>
+    38:             <td><%= device.status %></td>
+    39:             <td><%= device.running %></td>
+    40:         <td><%= link_to 'Edit', edit_device_path(device) %></td>
+    41:         <td><%= link_to 'Destroy', device, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    42:       <% end %>
+  
+app/models/device.rb:8:in `running'
+app/views/devices/index.html.erb:39:in `block in _app_views_devices_index_html_erb___1843989142555659663_69939580176320'
+app/views/devices/index.html.erb:28:in `_app_views_devices_index_html_erb___1843989142555659663_69939580176320'
+Started GET "/devices" for 127.0.0.1 at 2018-03-24 12:48:29 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (14.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 62ms (Views: 58.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/devices/power/1" for 127.0.0.1 at 2018-03-24 12:48:31 -0700
+Processing by DevicesController#power as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDevice Load (0.7ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/devices
+Completed 302 Found in 5ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-24 12:48:31 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 48ms (Views: 46.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/devices/power/1" for 127.0.0.1 at 2018-03-24 12:48:33 -0700
+Processing by DevicesController#power as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/devices
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-24 12:48:33 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 59ms (Views: 57.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-24 12:50:43 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (9.7ms)
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 77ms (Views: 69.1ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/devices/power/1" for 127.0.0.1 at 2018-03-24 12:50:45 -0700
+Processing by DevicesController#power as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/devices_controller.rb:70:in `power'
+Started GET "/devices/power/1" for 127.0.0.1 at 2018-03-24 12:53:27 -0700
+  
+SyntaxError (/home/h/cmpt276spring2018/app/controllers/devices_controller.rb:100: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/devices_controller.rb:100: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/devices/power/1" for 127.0.0.1 at 2018-03-24 12:53:42 -0700
+Processing by DevicesController#power as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDevice Load (0.2ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 1.5ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/devices_controller.rb:70:in `power'
+Started GET "/devices/power/1" for 127.0.0.1 at 2018-03-24 12:54:40 -0700
+Processing by DevicesController#power as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDevice Load (0.9ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/devices
+Completed 302 Found in 26ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-24 12:54:41 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (6.5ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 81ms (Views: 78.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/devices/power/1" for 127.0.0.1 at 2018-03-24 12:54:43 -0700
+Processing by DevicesController#power as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/devices
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-24 12:54:43 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 70ms (Views: 68.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-24 12:55:45 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.7ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (15.1ms)
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (4.5ms)
+Completed 200 OK in 77ms (Views: 69.5ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/devices/power/1" for 127.0.0.1 at 2018-03-24 12:55:47 -0700
+Processing by DevicesController#power as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `update_running' for #<Device:0x007f37fd763ec8>
+Did you mean?  update_column):
+  
+app/controllers/devices_controller.rb:70:in `power'
+Started GET "/devices/power/1" for 127.0.0.1 at 2018-03-24 12:56:20 -0700
+Processing by DevicesController#power as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 2.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/devices_controller.rb:70:in `power'
+Started GET "/devices/power/1" for 127.0.0.1 at 2018-03-24 13:09:34 -0700
+Processing by DevicesController#power as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDevice Load (1.1ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/devices
+Completed 302 Found in 25ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-24 13:09:35 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.6ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (6.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 85ms (Views: 82.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-24 13:29:54 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.3ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (14.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 77ms (Views: 72.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/devices/power/1" for 127.0.0.1 at 2018-03-24 13:29:56 -0700
+Processing by DevicesController#power as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 1 LIMIT 1[0m
+  [1m[35m (7.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (20.6ms)[0m  [1m[33mUPDATE `devices` SET `running` = '2018-03-24 20:29:56', `updated_at` = '2018-03-24 20:29:56' WHERE `devices`.`id` = 1[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/devices
+Completed 302 Found in 42ms (ActiveRecord: 36.4ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-24 13:29:56 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (1.2ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (10.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 58ms (Views: 56.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-24 13:30:00 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.4ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (7.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (3.9ms)
+Completed 200 OK in 61ms (Views: 59.1ms | ActiveRecord: 1.0ms)
+
+

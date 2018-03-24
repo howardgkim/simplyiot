@@ -1,5 +1,5 @@
 class DevicesController < ApplicationController
-  before_action :set_device, only: [:show, :edit, :update, :destroy, :power, :shutdown]
+  before_action :set_device, only: [:show, :edit, :update, :destroy, :power, :shutdown, :running]
 
   # GET /devices
   # GET /devices.json
@@ -67,7 +67,7 @@ class DevicesController < ApplicationController
     sock.write 'SWITCH'+@device.switch.to_s+'=1'
     #puts sock.read(6) # Since the response message has 6 bytes.
     sock.close
-    @device.running = DateTime.current() #update Running Since column
+    @device.update_attribute(:running, DateTime.now) #update Running Since column
     redirect_to '/devices'
   end
 
@@ -77,10 +77,9 @@ class DevicesController < ApplicationController
     sock.write 'SWITCH'+@device.switch.to_s+'=0' # e.g. SWITCH1=0
     #puts sock.read(6) # Since the response message has 6 bytes.
     sock.close
-    @device.running = '' #update Running Since column to null, likely wrong method
+    @device.update_attribute(:running, nil) #update Running Since column to nil
     redirect_to '/devices'
   end
-
 
   private
     # Use callbacks to share common setup or constraints between actions.

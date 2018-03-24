@@ -3,4 +3,5 @@ class Device < ApplicationRecord
     validates :name, presence: true
     validates :category, presence: true
     validates :owner, presence: true
+    validates :switch, presence: true
 end
