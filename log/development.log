@@ -8017,3 +8017,87 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 1309ms (Views: 1266.6ms | ActiveRecord: 4.8ms)
 
 
+Started GET "/devices/" for 127.0.0.1 at 2018-03-23 16:51:21 -0700
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (1.3ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (132.4ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (5.2ms)
+Completed 200 OK in 1332ms (Views: 1261.5ms | ActiveRecord: 21.1ms)
+
+
+Started GET "/devices/" for 127.0.0.1 at 2018-03-23 18:46:48 -0700
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  
+SyntaxError (/home/triangle/Downloads/projects/cmpt276spring2018/app/controllers/devices_controller.rb:81: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/devices_controller.rb:81: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/devices/" for 127.0.0.1 at 2018-03-23 18:47:20 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (138.9ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (5.1ms)
+Completed 200 OK in 440ms (Views: 407.3ms | ActiveRecord: 19.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-23 18:47:26 -0700
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (1.8ms)
+Completed 200 OK in 238ms (Views: 229.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/devices/" for 127.0.0.1 at 2018-03-23 18:58:33 -0700
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (1.4ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (112.2ms)
+Completed 500 Internal Server Error in 199ms (ActiveRecord: 5.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "/devices/power/3":String):
+    31:             <td><%= device.owner %></td>
+    32:             <td><%= device.description %></td>
+    33:             <!-- <td><%= link_to 'Show', device %></td> -->
+    34:             <td><%= link_to 'Power', power_path(device), class: 'btn btn-success btn-block' do %>
+    35:             <span class="glyphicon glyphicon-flash"></span> Power <% end %></td>
+    36:             <td><%= device.status %></td>
+    37:             <td><%= device.running %></td>
+  
+app/views/devices/index.html.erb:34:in `block in _app_views_devices_index_html_erb__966699916_17349780'
+app/views/devices/index.html.erb:27:in `_app_views_devices_index_html_erb__966699916_17349780'
+Started GET "/devices/" for 127.0.0.1 at 2018-03-23 18:59:41 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mDevice Load (0.9ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (108.9ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (3.2ms)
+Completed 200 OK in 1156ms (Views: 1144.9ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/devices/power/3" for 127.0.0.1 at 2018-03-23 18:59:47 -0700
+Processing by DevicesController#power as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDevice Load (1.4ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 3 LIMIT 1[0m
+Completed 500 Internal Server Error in 31175ms (ActiveRecord: 1.4ms)
+
+
+  
+Errno::ENETUNREACH (Network is unreachable - connect(2) for "192.168.1.10" port 3000):
+  
+app/controllers/devices_controller.rb:67:in `initialize'
+app/controllers/devices_controller.rb:67:in `new'
+app/controllers/devices_controller.rb:67:in `power'
+Started PUT "/__web_console/repl_sessions/4419f0d2fed699a39bf3127155901657" for 127.0.0.1 at 2018-03-23 19:01:58 -0700

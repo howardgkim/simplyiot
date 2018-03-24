@@ -31,7 +31,7 @@
             <td><%= device.owner %></td>
             <td><%= device.description %></td>
             <!-- <td><%= link_to 'Show', device %></td> -->
-            <td><%= link_to '/', class: 'btn btn-success btn-block' do %>
+            <td><%= link_to power_path(device), class: 'btn btn-success btn-block' do %>
             <span class="glyphicon glyphicon-flash"></span> Power <% end %></td>
             <td><%= device.status %></td>
             <td><%= device.running %></td>

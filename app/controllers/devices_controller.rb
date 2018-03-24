@@ -1,5 +1,5 @@
 class DevicesController < ApplicationController
-  before_action :set_device, only: [:show, :edit, :update, :destroy]
+  before_action :set_device, only: [:show, :edit, :update, :destroy, :power]
 
   # GET /devices
   # GET /devices.json
@@ -59,6 +59,15 @@ class DevicesController < ApplicationController
       format.html { redirect_to devices_url, notice: 'Device was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+  
+  def power
+    require 'socket'
+    ip_address = @device.ip
+    sock = TCPSocket.new('192.168.1.10', 3000)
+    sock.write 'GETHELLO'
+    puts sock.read(5) # Since the response message has 5 bytes.
+    sock.close
   end
 
   private

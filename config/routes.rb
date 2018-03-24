@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :devices
   get 'device/index'
   get 'device/show'
+  get '/devices/power/:id', to: 'devices#power', as: 'power'
 
   resources :requests
   get 'request/index'
