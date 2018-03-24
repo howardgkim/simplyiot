@@ -17,7 +17,6 @@
             <th>Switch Number</th>
             <th>Description</th>
             <th>Power</th>
-            <th>Status</th>
             <th>Running Since</th>
             <th></th>
             <th></th>
@@ -32,10 +31,7 @@
             <td><%= device.owner %></td>
             <td><%= device.switch %></td>
             <td><%= device.description %></td>
-            <!-- <td><%= link_to 'Show', device %></td> -->
-            <td><%= link_to power_path(device), class: 'btn btn-success btn-block' do %>
-            <span class="glyphicon glyphicon-flash"></span> Power <% end %></td>
-            <td><%= device.status %></td>
+            <td><%= link_to power_path(device), class: 'btn btn-success btn-block' do %><span class="glyphicon glyphicon-flash"></span> Power <% end %></td>
             <td><%= device.running %></td>
         <td><%= link_to 'Edit', edit_device_path(device) %></td>
         <td><%= link_to 'Destroy', device, method: :delete, data: { confirm: 'Are you sure?' } %></td>
