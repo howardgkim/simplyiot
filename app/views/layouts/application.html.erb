@@ -35,7 +35,7 @@
           <li><%= link_to "Contact", root_path %></li>
             <% if logged_in? %>
                 <li><%= link_to "Devices", devices_path %></li>
-              <li><%= link_to "Reqists", requests_path %></li>
+              <li><%= link_to "Requests", requests_path %></li>
               <li><%= link_to "Log out", logout_path, method: :delete %></li>
             <% else %>
               <li><%= link_to "Log in", login_path %></li>
