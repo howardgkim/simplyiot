@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   resources :devices
   get 'device/index'
   get 'device/show'
-  get '/devices/power/:id', to: 'devices#power', as: 'power'
+  get '/devices/power/:id', to: 'devices#power', as: 'power' # adding :id resolved the error where method could not find id
 
   resources :requests
   get 'request/index'

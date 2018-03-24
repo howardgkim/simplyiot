@@ -14,6 +14,7 @@
             <th>Name</th>
             <th>Category</th>
             <th>Owner</th>
+            <th>Switch Number</th>
             <th>Description</th>
             <th>Power</th>
             <th>Status</th> <!-- change to uptime? -->
@@ -29,6 +30,7 @@
             <td><%= device.name %></td>
             <td><%= device.category %></td>
             <td><%= device.owner %></td>
+            <td><%= device.switch %></td>
             <td><%= device.description %></td>
             <!-- <td><%= link_to 'Show', device %></td> -->
             <td><%= link_to power_path(device), class: 'btn btn-success btn-block' do %>

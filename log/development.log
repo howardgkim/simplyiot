@@ -8154,3 +8154,276 @@ puma (3.11.2) lib/puma/server.rb:438:in `process_client'
 puma (3.11.2) lib/puma/server.rb:302:in `block in run'
 puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 >>>>>>> b37e47def8fee8230d92ffa3cc7f42fce598e0e4
+Started GET "/" for 127.0.0.1 at 2018-03-23 19:10:28 -0700
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.8ms)
+Started GET "/devices/" for 127.0.0.1 at 2018-03-23 19:10:39 -0700
+Processing by DevicesController#index as HTML
+  [1m[36mUser Load (25.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (5.8ms)
+  Rendering devices/index.html.erb within layouts/application
+Completed 200 OK in 15828ms (Views: 15777.6ms | ActiveRecord: 26.4ms)
+
+
+  [1m[35m (3.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mDevice Load (0.9ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (87.0ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 426ms (Views: 371.3ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/devices/power/5" for 127.0.0.1 at 2018-03-23 19:10:50 -0700
+Processing by DevicesController#power as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mDevice Load (1.9ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 5 LIMIT 1[0m
+Started GET "/devices/power/5" for 127.0.0.1 at 2018-03-23 19:11:50 -0700
+Processing by DevicesController#power as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mDevice Load (4.6ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 5 LIMIT 1[0m
+Completed 500 Internal Server Error in 127424ms (ActiveRecord: 1.9ms)
+
+
+  
+Errno::ETIMEDOUT (Connection timed out - connect(2) for "192.168.1.10" port 3000):
+  
+app/controllers/devices_controller.rb:67:in `initialize'
+app/controllers/devices_controller.rb:67:in `new'
+app/controllers/devices_controller.rb:67:in `power'
+Started GET "/devices/power/5" for 127.0.0.1 at 2018-03-23 19:13:01 -0700
+Completed 500 Internal Server Error in 127251ms (ActiveRecord: 5.2ms)
+
+
+  
+Errno::ETIMEDOUT (Connection timed out - connect(2) for "192.168.1.10" port 3000):
+  
+app/controllers/devices_controller.rb:67:in `initialize'
+app/controllers/devices_controller.rb:67:in `new'
+app/controllers/devices_controller.rb:67:in `power'
+Started GET "/devices/" for 127.0.0.1 at 2018-03-23 19:14:08 -0700
+Processing by DevicesController#power as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 5 LIMIT 1[0m
+Completed 500 Internal Server Error in 3111ms (ActiveRecord: 11.0ms)
+
+
+  
+Errno::EHOSTUNREACH (No route to host - connect(2) for "192.168.0.50" port 43333):
+  
+app/controllers/devices_controller.rb:67:in `initialize'
+app/controllers/devices_controller.rb:67:in `new'
+app/controllers/devices_controller.rb:67:in `power'
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.9ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (93.0ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (6.3ms)
+Completed 200 OK in 333ms (Views: 312.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/devices/" for 127.0.0.1 at 2018-03-23 19:14:21 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (12.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (9.5ms)
+Completed 200 OK in 282ms (Views: 270.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/devices/power/3" for 127.0.0.1 at 2018-03-23 19:14:24 -0700
+Processing by DevicesController#power as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 3 LIMIT 1[0m
+Started GET "/devices/power/3" for 127.0.0.1 at 2018-03-23 19:15:24 -0700
+Processing by DevicesController#power as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDevice Load (2.6ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 3 LIMIT 1[0m
+Completed 500 Internal Server Error in 127336ms (ActiveRecord: 0.8ms)
+
+
+  
+Errno::ETIMEDOUT (Connection timed out - connect(2) for "192.168.0.1" port 43333):
+  
+app/controllers/devices_controller.rb:67:in `initialize'
+app/controllers/devices_controller.rb:67:in `new'
+app/controllers/devices_controller.rb:67:in `power'
+Completed 500 Internal Server Error in 127288ms (ActiveRecord: 2.6ms)
+
+
+  
+Errno::ETIMEDOUT (Connection timed out - connect(2) for "192.168.0.1" port 43333):
+  
+app/controllers/devices_controller.rb:67:in `initialize'
+app/controllers/devices_controller.rb:67:in `new'
+app/controllers/devices_controller.rb:67:in `power'
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT GET_LOCK(6698999013314570130, 0)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddSwitchToDevices (20180324023807)
+  [1m[35m (1572.5ms)[0m  [1m[35mALTER TABLE `devices` ADD `switch` int[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180324023807')[0m
+  [1m[35m (34.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT RELEASE_LOCK(6698999013314570130)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/devices/" for 127.0.0.1 at 2018-03-23 19:44:10 -0700
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (2.3ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (103.6ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (18.1ms)
+Completed 200 OK in 1276ms (Views: 1223.0ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/devices/new" for 127.0.0.1 at 2018-03-23 19:44:17 -0700
+Processing by DevicesController#new as HTML
+  Rendering devices/new.html.erb within layouts/application
+  Rendered devices/_form.html.erb (123.2ms)
+  Rendered devices/new.html.erb within layouts/application (129.3ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (3.8ms)
+Completed 200 OK in 432ms (Views: 423.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/devices/new" for 127.0.0.1 at 2018-03-23 19:49:10 -0700
+Processing by DevicesController#new as HTML
+  Rendering devices/new.html.erb within layouts/application
+  Rendered devices/_form.html.erb (423.1ms)
+  Rendered devices/new.html.erb within layouts/application (430.4ms)
+Completed 500 Internal Server Error in 452ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `_field' for #<ActionView::Helpers::FormBuilder:0xb2acf0a0>
+Did you mean?  fields):
+    39:   <div class="form-group">
+    40:     <%= f.label 'Switch Number', class: "col-sm-2 control-label" %>
+    41:     <div class="col-sm-10">
+    42:       <%= f._field :switch, class: "form-control" %>
+    43:     </div>
+    44:   </div>
+    45:   <div class="form-group">
+  
+app/views/devices/_form.html.erb:42:in `block in _app_views_devices__form_html_erb__948037136__648689384'
+app/views/devices/_form.html.erb:1:in `_app_views_devices__form_html_erb__948037136__648689384'
+app/views/devices/new.html.erb:9:in `_app_views_devices_new_html_erb___1067496818__648719840'
+Started GET "/devices/new" for 127.0.0.1 at 2018-03-23 19:49:30 -0700
+Processing by DevicesController#new as HTML
+  Rendering devices/new.html.erb within layouts/application
+  Rendered devices/_form.html.erb (13.6ms)
+  Rendered devices/new.html.erb within layouts/application (22.0ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 284ms (Views: 276.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/devices/new" for 127.0.0.1 at 2018-03-23 19:50:12 -0700
+Processing by DevicesController#new as HTML
+  Rendering devices/new.html.erb within layouts/application
+  Rendered devices/_form.html.erb (21.4ms)
+  Rendered devices/new.html.erb within layouts/application (25.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (2.3ms)
+Completed 200 OK in 317ms (Views: 313.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/devices" for 127.0.0.1 at 2018-03-23 19:51:15 -0700
+Processing by DevicesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QvDNLLFistIrbf0Qu7QxxR2FGtY/Uri8pK37HM5ota7nDVBfuqNSr4Ay+eSqSuJkyJDAUjsLmDNj+0jJZa9N2A==", "device"=>{"ip"=>"192.168.0.1", "name"=>"Cool Device", "category"=>"waffle", "owner"=>"user", "switch"=>"3", "description"=>""}, "commit"=>"Create Device"}
+  [1m[35m (7.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO `devices` (`ip`, `name`, `category`, `owner`, `description`, `created_at`, `updated_at`, `switch`) VALUES ('192.168.0.1', 'Cool Device', 'waffle', 'user', '', '2018-03-24 02:51:15', '2018-03-24 02:51:15', 3)[0m
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/devices/6
+Completed 302 Found in 63ms (ActiveRecord: 17.3ms)
+
+
+Started GET "/devices/6" for 127.0.0.1 at 2018-03-23 19:51:15 -0700
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 6 LIMIT 1[0m
+  Rendering devices/show.html.erb within layouts/application
+  Rendered devices/show.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (1.9ms)
+Completed 200 OK in 260ms (Views: 241.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-23 19:51:18 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.9ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (22.2ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (2.5ms)
+Completed 200 OK in 258ms (Views: 252.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-23 19:51:35 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (19.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (2.4ms)
+Completed 200 OK in 281ms (Views: 275.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-23 19:53:24 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.8ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (61.7ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (3.7ms)
+Completed 200 OK in 305ms (Views: 285.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2018-03-23 19:53:29 -0700
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.7ms)[0m  [1m[34mSELECT `devices`.* FROM `devices`[0m
+  Rendered devices/index.html.erb within layouts/application (18.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_footer.html.erb (2.2ms)
+Completed 200 OK in 297ms (Views: 291.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/devices/power/6" for 127.0.0.1 at 2018-03-23 19:53:32 -0700
+Processing by DevicesController#power as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDevice Load (1.0ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 6 LIMIT 1[0m
+Started GET "/devices/power/6" for 127.0.0.1 at 2018-03-23 19:54:32 -0700
+Processing by DevicesController#power as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35m (1.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mDevice Load (0.9ms)[0m  [1m[34mSELECT  `devices`.* FROM `devices` WHERE `devices`.`id` = 6 LIMIT 1[0m
+Completed 500 Internal Server Error in 127383ms (ActiveRecord: 1.0ms)
+
+
+  
+Errno::ETIMEDOUT (Connection timed out - connect(2) for "192.168.0.1" port 43333):
+  
+app/controllers/devices_controller.rb:66:in `initialize'
+app/controllers/devices_controller.rb:66:in `new'
+app/controllers/devices_controller.rb:66:in `power'
+Completed 500 Internal Server Error in 127345ms (ActiveRecord: 2.0ms)
+
+
+  
+Errno::ETIMEDOUT (Connection timed out - connect(2) for "192.168.0.1" port 43333):
+  
+app/controllers/devices_controller.rb:66:in `initialize'
+app/controllers/devices_controller.rb:66:in `new'
+app/controllers/devices_controller.rb:66:in `power'

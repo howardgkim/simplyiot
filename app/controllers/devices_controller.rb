@@ -63,10 +63,9 @@ class DevicesController < ApplicationController
   
   def power
     require 'socket'
-    ip_address = @device.ip
-    sock = TCPSocket.new('192.168.1.10', 3000)
-    sock.write 'GETHELLO'
-    puts sock.read(5) # Since the response message has 5 bytes.
+    sock = TCPSocket.new(@device.ip, 43333)
+    sock.write 'SWITCH'+@device.switch+'=1'
+    #puts sock.read(6) # Since the response message has 6 bytes.
     sock.close
   end
 
@@ -78,6 +77,6 @@ class DevicesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def device_params
-      params.require(:device).permit(:ip, :name, :category, :owner, :description)
+      params.require(:device).permit(:ip, :name, :category, :owner, :description, :switch)
     end
 end
