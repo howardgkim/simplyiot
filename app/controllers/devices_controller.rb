@@ -64,9 +64,10 @@ class DevicesController < ApplicationController
   def power
     require 'socket'
     sock = TCPSocket.new(@device.ip, 43333)
-    sock.write 'SWITCH'+@device.switch+'=1'
+    sock.write 'SWITCH'+@device.switch.to_s+'=1'
     #puts sock.read(6) # Since the response message has 6 bytes.
     sock.close
+    redirect_to '/devices'
   end
 
   private
