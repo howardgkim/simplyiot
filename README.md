@@ -6,4 +6,4 @@ The features of SimplyIoT include automating tasks based on parameters like brig
 Although the app is geared towards single-family homes, it can be scaled up in future implementation to control multi-family residentials. 
 
 ![My image](https://howardgkim.github.io/webpage/Screenshot%202018-03-20%20at%2020.04.56.png)
-![My image](https://howardgkim.github.io/webpage/Screenshot%202018-03-20%20at%2020.05.13.png)
+![My image](https://howardgkim.github.io/webpage/devices.png)
